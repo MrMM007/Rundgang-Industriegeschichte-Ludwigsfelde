@@ -1,0 +1,8 @@
+**Schnellübersicht zu GITHUB**
+
+Repository – Projektordner mit Versionsverlauf
+main – Hauptversion des Projekts (stabile Standard-Version)
+Branch – separater Arbeitsbereich für neue Änderungen oder Features (damit die Hauptversion stabil bleibt)
+Commit – gespeicherter Zwischenstand einer Änderung in einem Branch
+Pull Request – Anfrage, Änderungen aus einem Branch in einen anderen (z. B. main) zu übernehmen; dient der Code-Überprüfung durch andere
+Merge – Zusammenführen eines Branches in einen anderen (z. B. in main)
