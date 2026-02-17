@@ -2,6 +2,7 @@
 Interaktiver Karte/ Rundgang mit Informationstexten und historischen Bildern zur Industriegeschichte der Stadt Ludwigsfelde
 
 **Alle bitte ein GITHUB-Account erstellen**
+**Schaut bitte regelmäßig in die Zeitplanung**
 
 Aufgabenaufteilung:\
 Malte - Leitung\
