@@ -8,7 +8,8 @@ Theo und Jason - Informationen und Bilder raussuchen\
 Constanze und Max – Interaktive Karte – gestalten und Funktionen hinzufügen
 
 Website: \
-Wie soll die Website gestaltet sein? Verein  \
+Wie soll die Website gestaltet sein? Verein \
+Darf man die aktuelle Website verwenden? Verein  \
 Welche Funktionen soll die Website haben? \
 Frontend? Wie machbar? \
 Backend? Mit welcher Sprache Funktionen? 
