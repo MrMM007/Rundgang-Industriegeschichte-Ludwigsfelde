@@ -1,50 +1,32 @@
 <!DOCTYPE html>
 <html lang="de">
-<head>
-    <meta charset="UTF-8">
-    <title>Industriegeschichte Ludwigsfelde</title>
-    <link rel='stylesheet' href='style.css'>
-    <!>Kommentare erstellen</>
-</head>
-<body>
-
+<link rel="stylesheet" href="style.css">
 <header>
     <h1>Industriegeschichte Ludwigsfelde</h1>
+
+    <button class="burger" id="burgerBtn">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
 </header>
 
-<section>
-    <h2>Einleitung</h2>
-    <p>
-        Ludwigsfelde ist bekannt für seine bedeutende Rolle in der deutschen Industriegeschichte.
-        Besonders im 20. Jahrhundert entwickelte sich die Stadt zu einem wichtigen Standort für
-        Produktion und Technik.
-    </p>
-</section>
-
-<section>
-    <h2>Wichtige Industriezweige</h2>
+<nav id="mobileMenu">
     <ul>
-        <li>
-            <a href="Fahrzeugbau.html">Fahrzeugbau</a></li>
-        <li>
-            <a href="Maschinenbau.html">Maschinenbau</a></li>
-        <li>
-            <a href="Luftfahrtindustrie.html">Luftfahrtindustrie</a></li>
+        <li><a href="#">Startseite</a></li>
+        <li><a href="#">Geschichte</a></li>
+        <li><a href="#">Galerie</a></li>
+        <li><a href="#">Über uns</a></li>
+        <li><a href="#">Kontakt</a></li>
     </ul>
-</section>
+</nav>
 
-<section>
-    <h2>Bedeutung heute</h2>
-    <p>
-        Auch heute ist Ludwigsfelde ein moderner Industriestandort mit zahlreichen Unternehmen
-        und Arbeitsplätzen, die an die lange Tradition anknüpfen.
-    </p>
-</section>
+<main>
+    <div class="slider" id="slider">
+        <img src="bilder/bild1.jpg" class="slide aktiv" alt="Bild 1">
+        <img src="bilder/bild2.jpg" class="slide" alt="Bild 2">
+        <img src="bilder/bild3.jpg" class="slide" alt="Bild 3">
+    </div>
+</main>
 
-</body>
-</html>
-
-
-
-
-
+<script src="script.js"></script>
