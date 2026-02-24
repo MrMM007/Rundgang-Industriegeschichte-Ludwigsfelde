@@ -154,6 +154,34 @@ a {
         margin-bottom: 5px;
     }
 }
+    .header-icons {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-left: auto;
+}
+
+    .header-icons {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-left: auto;
+    }
+
+    .home-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: inherit;
+        text-decoration: none;
+        opacity: 0.85;
+        transition: opacity 0.2s;
+    }
+
+    .home-icon:hover {
+        opacity: 1;
+    }
+    
 
 
 
