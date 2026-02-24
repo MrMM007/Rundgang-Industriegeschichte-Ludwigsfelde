@@ -109,14 +109,14 @@ a {
 }
 footer {
     position: fixed;
-    top: 0;
     width: 100%;
     background-color: #2e2e2e;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px 200px;
-    z-index: 100;
+    z-index: 200;
 }
+
 
 
