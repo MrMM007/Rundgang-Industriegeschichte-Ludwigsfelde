@@ -26,7 +26,7 @@ Barrierefreiheit - Bildbeschreibung
 
 Karte: \
 Wie machen wir die Karte? Google Maps? \
-Mit Software? Preis? Kompatibel mit Front und Backend?
+Mit Software? Preis? Kompatibel mit Front und Backend?\
 mögliche Webseiten:
 - outdooractive -> Wanderroute, Textbeschreibungen von Punkten, allgemeine Bilder aber keine zu einzelnen Punkten
 - uMap
