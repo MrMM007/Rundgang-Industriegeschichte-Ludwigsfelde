@@ -114,9 +114,10 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 200px;
+    padding: 200px 200px;
     z-index: 200;
 }
+
 
 
 
