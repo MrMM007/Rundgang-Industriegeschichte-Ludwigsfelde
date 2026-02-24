@@ -8,7 +8,7 @@ Aufgabenaufteilung:\
 Malte - Leitung\
 Sophie K., Birk, Jonathan - Website\
 Theo und Jason - Informationen und Bilder raussuchen\
-Constanze und Max – Interaktive Karte – gestalten und Funktionen hinzufügen
+Constanze, Ella und Max – Interaktive Karte – gestalten und Funktionen hinzufügen
 
 Website: \
 Wie soll die Website gestaltet sein? Verein \
