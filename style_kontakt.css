@@ -76,16 +76,23 @@ nav ul li a {
 }
 
 main {
-    margin-top: 60px;
-    display: flex;
-    flex-direction: column; /* Dies zwingt die Elemente untereinander */
-    justify-content: flex-start; /* Richtet den Inhalt oben aus statt mittig */
-    align-items: center; /* Zentriert den Textblock horizontal */
-    min-height: calc(100vh - 60px);
-    padding: 20px;
-    text-align: center; /* Falls der Text selbst auch mittig sein soll */
+    margin-top: 80px; /* Platz für den Header */
+    display: flex !important;
+    flex-direction: column !important; /* Erzwingt die Spaltenansicht */
+    justify-content: flex-start !important;
+    align-items: flex-start !important; /* Richtet Text linksbündig aus */
+    height: auto !important;
+    min-height: 100vh;
+    padding: 40px;
 }
 
+/* Das hier stellt sicher, dass h1 und p wirklich die ganze Zeile nutzen */
+main h1, main p {
+    display: block !important;
+    width: 100% !important;
+    clear: both;
+    margin-bottom: 15px;
+}
 .slider {
     position: relative;
     width: 70%;
