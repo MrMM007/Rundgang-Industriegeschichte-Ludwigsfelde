@@ -181,7 +181,12 @@ a {
     .home-icon:hover {
         opacity: 1;
     }
+
+    footer {
+        text-align: center;
+    }
     
+
 
 
 
