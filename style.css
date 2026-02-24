@@ -103,7 +103,7 @@ main {
 }
 
 a {
-    color: blue;
+    color: #f5f0eb;
     text-decoration: none; 
     font-weight: bold; 
 }
@@ -117,6 +117,7 @@ footer {
     padding: 15px 200px;
     z-index: 200;
 }
+
 
 
 
