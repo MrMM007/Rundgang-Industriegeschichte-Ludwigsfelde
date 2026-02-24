@@ -112,3 +112,12 @@ h1, p {
     width: 100%;
     margin-bottom: 1em; /* Sorgt für saubere Abstände nach unten */
 }
+
+.impressum-content {
+    display: block; /* Schaltet Flexbox aus */
+    height: auto;   /* Erlaubt der Seite zu scrollen, falls der Text lang ist */
+    padding: 40px;  /* Etwas Abstand zum Rand */
+    max-width: 800px; /* Damit der Text nicht über die ganze Bildschirmbreite schießt */
+    margin-left: auto;
+    margin-right: auto;
+}
