@@ -184,11 +184,14 @@ a {
 
     footer {
         text-align: center;
+        display: flex;
+        color: inherit;
     }
 
 li {
   list-style-type: none;
 }
+
 
 
 
