@@ -21,7 +21,7 @@ Backend? Mit welcher Sprache Funktionen?
 Informationen: \
 Welche Themen sollen drin sein? Verein \
 Informationen durchlesen und ordnen nach Zeit oder Ort \
-Barrierefreiheit - Bildbeschreibung 
+Barrierefreiheit - Bildbeschreibung \
 
 
 Karte: \
@@ -29,4 +29,9 @@ Wie machen wir die Karte? Google Maps? \
 Mit Software? Preis? Kompatibel mit Front und Backend?\
 mögliche Webseiten:
 - outdooractive -> Wanderroute, Textbeschreibungen von Punkten, allgemeine Bilder aber keine zu einzelnen Punkten
-- uMap
+- uMap \
+
+Route \
+1. Berlin - anhaltinische Eisenbahn -> 1843 Haltepunkt Ludwigsfelde, Postanstalt \
+2. Autobahn -> 1936 Beginn Autobahnbau \
+3. 1936-1945 Daimler-Benz Motoren GmbH Genshagen UND Die Fliegertechnische Vorschule der Luftwaffe, Berlin-Genshagen \
