@@ -21,7 +21,7 @@ Backend? Mit welcher Sprache Funktionen?
 Informationen: \
 Welche Themen sollen drin sein? Verein \
 Informationen durchlesen und ordnen nach Zeit oder Ort \
-Barrierefreiheit - Bildbeschreibung \
+Barrierefreiheit - Bildbeschreibung
 
 
 Karte: \
