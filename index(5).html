@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Industriegeschichte Ludwigsfelde</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Industriegeschichte Ludwigsfelde</h1>
+    <div class="header-right">
+        <a class="home-icon" href="index.html" title="Startseite">
+            <img src="bilder/icons8-zuhause-32.png" alt="Startseite">
+        </a>
+        <button class="burger" id="burgerBtn">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</header>
+
+<nav id="mobileMenu">
+    <ul>
+        <li><a href="index.html">Startseite</a></li>
+        <li><a href="Geschichte.html">Geschichte</a></li>
+        <li><a href="Rallye.html">Rallye</a></li>
+        <li><a href="Galerie.html">Galerie</a></li>
+        <li><a href="Überuns.html">Über uns</a></li>
+        <li><a href="Kontakt.html">Kontakt</a></li>
+    </ul>
+</nav>
+
+<main>
+    <!-- Hero -->
+    <div class="hero">
+        <p class="hero-subtitle">Entdecke die Vergangenheit</p>
+        <h2 class="hero-title">Geschichte, die bewegt</h2>
+        <p class="hero-desc">Tauche ein in die industrielle Vergangenheit von Ludwigsfelde – von der Fahrzeugfabrik bis zur modernen Stadt.</p>
+    </div>
+
+    <!-- Slider -->
+    <div class="slider-section">
+        <div class="slider-wrapper">
+            <div class="slide-track" id="slideTrack">
+                <img src="bilder/bild1.jpg" alt="Bild 1">
+                <img src="bilder/bild2.jpg" alt="Bild 2">
+                <img src="bilder/bild3.jpg" alt="Bild 3">
+            </div>
+            <button class="slider-btn prev" id="prevBtn">&#8592;</button>
+            <button class="slider-btn next" id="nextBtn">&#8594;</button>
+        </div>
+        <div class="slider-dots" id="sliderDots"></div>
+        <p class="slide-caption" id="slideCaption"></p>
+    </div>
+
+    <!-- Info Cards -->
+    <div class="info-section">
+        <div class="info-card">
+            <div class="card-icon">🏭</div>
+            <h3 class="card-title">Industriegeschichte</h3>
+            <p class="card-text">Erfahre mehr über die bedeutende industrielle Entwicklung Ludwigsfeldes seit dem frühen 20. Jahrhundert.</p>
+        </div>
+        <div class="info-card">
+            <div class="card-icon">🗺️</div>
+            <h3 class="card-title">Stadt-Rallye</h3>
+            <p class="card-text">Entdecke die historischen Stätten auf unserer interaktiven Rallye durch die Stadt.</p>
+        </div>
+        <div class="info-card">
+            <div class="card-icon">📷</div>
+            <h3 class="card-title">Galerie</h3>
+            <p class="card-text">Stöbere in historischen und modernen Fotografien aus Ludwigsfelde und seiner Industrie.</p>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <div>
+        <a href="Kontakt.html">Impressum</a> &nbsp;|&nbsp; © 2025 Industriegeschichte Ludwigsfelde
+    </div>
+</footer>
+
+<script>
+    const burgerBtn = document.getElementById('burgerBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    burgerBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('open');
+        burgerBtn.classList.toggle('open');
+    });
+
+    const track = document.getElementById('slideTrack');
+    const images = track.querySelectorAll('img');
+    const total = images.length;
+    const dotsContainer = document.getElementById('sliderDots');
+    const caption = document.getElementById('slideCaption');
+    const captions = ['Ludwigsfelde – Blick auf die Fabrikanlage', 'Historische Aufnahmen aus der Produktion', 'Die Stadt heute – Erinnerungen an die Industrie'];
+    let current = 0;
+    let autoTimer;
+
+    images.forEach((_, i) => {
+        const dot = document.createElement('button');
+        dot.className = 'dot' + (i === 0 ? ' active' : '');
+        dot.setAttribute('aria-label', `Bild ${i + 1}`);
+        dot.addEventListener('click', () => goTo(i));
+        dotsContainer.appendChild(dot);
+    });
+
+    function updateDots() {
+        dotsContainer.querySelectorAll('.dot').forEach((d, i) => {
+            d.classList.toggle('active', i === current);
+        });
+    }
+
+    function updateCaption() {
+        caption.style.opacity = '0';
+        setTimeout(() => {
+            caption.textContent = captions[current] || '';
+            caption.style.opacity = '1';
+        }, 300);
+    }
+
+    function goTo(index) {
+        current = (index + total) % total;
+        track.style.transform = `translateX(-${current * 100}%)`;
+        updateDots();
+        updateCaption();
+    }
+
+    document.getElementById('prevBtn').addEventListener('click', () => { goTo(current - 1); resetAuto(); });
+    document.getElementById('nextBtn').addEventListener('click', () => { goTo(current + 1); resetAuto(); });
+
+    function startAuto() { autoTimer = setInterval(() => goTo(current + 1), 4000); }
+    function resetAuto() { clearInterval(autoTimer); startAuto(); }
+
+    goTo(0);
+    startAuto();
+</script>
+</body>
+</html>
