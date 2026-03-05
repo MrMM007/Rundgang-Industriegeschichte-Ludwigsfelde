@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impressum – Industriegeschichte Ludwigsfelde</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Industriegeschichte Ludwigsfelde</h1>
+    <div class="header-right">
+        <a class="home-icon" href="index.html" title="Startseite">
+            <img src="bilder/icons8-zuhause-32.png" alt="Startseite">
+        </a>
+        <button class="burger" id="burgerBtn">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</header>
+
+<nav id="mobileMenu">
+    <ul>
+        <li><a href="index.html">Startseite</a></li>
+        <li><a href="Geschichte.html">Geschichte</a></li>
+        <li><a href="Rallye.html">Rallye</a></li>
+        <li><a href="Galerie.html">Galerie</a></li>
+        <li><a href="Überuns.html">Über uns</a></li>
+        <li><a href="Kontakt.html">Kontakt</a></li>
+    </ul>
+</nav>
+
+<main>
+    <div class="page-hero">
+        <h2 class="page-hero-title">Impressum</h2>
+        <p class="page-hero-subtitle">Angaben gemäß § 5 DDG</p>
+    </div>
+
+    <div class="impressum-layout">
+        <p>
+            Helga Wunderlich<br>
+            Ernst-Thälmann-Straße 7<br>
+            14974 Ludwigsfelde
+        </p>
+
+        <h2>Vertreten durch</h2>
+        <p>Helga Wunderlich</p>
+
+        <h2>Verbraucherstreitbeilegung</h2>
+        <p>Wir nehmen nicht an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teil und sind dazu auch nicht verpflichtet.</p>
+
+        <div class="impressum-logo">
+            <a href="https://www.ludwigsfelder-geschichtsverein.de/" target="_blank">
+                <img src="bilder/Geschichtsverein LOGO.avif" alt="Ludwigsfelder Geschichtsverein">
+            </a>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <div>
+        <a href="Kontakt.html">Impressum</a> &nbsp;|&nbsp; © 2025 Industriegeschichte Ludwigsfelde
+    </div>
+</footer>
+
+<script>
+    const burgerBtn = document.getElementById('burgerBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    burgerBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('open');
+        burgerBtn.classList.toggle('open');
+    });
+</script>
+</body>
+</html>

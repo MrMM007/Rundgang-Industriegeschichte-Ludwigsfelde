@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geschichte – Industriegeschichte Ludwigsfelde</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Industriegeschichte Ludwigsfelde</h1>
+    <div class="header-right">
+        <a class="home-icon" href="index.html" title="Startseite">
+            <img src="bilder/icons8-zuhause-32.png" alt="Startseite">
+        </a>
+        <button class="burger" id="burgerBtn">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</header>
+
+<nav id="mobileMenu">
+    <ul>
+        <li><a href="index.html">Startseite</a></li>
+        <li><a href="Geschichte.html">Geschichte</a></li>
+        <li><a href="Rallye.html">Rallye</a></li>
+        <li><a href="Galerie.html">Galerie</a></li>
+        <li><a href="Überuns.html">Über uns</a></li>
+        <li><a href="Kontakt.html">Kontakt</a></li>
+    </ul>
+</nav>
+
+<main>
+    <div class="page-hero">
+        <h2 class="page-hero-title">Geschichte</h2>
+        <p class="page-hero-subtitle">Die industrielle Vergangenheit von Ludwigsfelde</p>
+    </div>
+
+    <div class="page-content">
+        <h2>Frühe Industrialisierung</h2>
+        <p>Ludwigsfelde blickt auf eine bewegte Industriegeschichte zurück. Seit dem frühen 20. Jahrhundert entwickelte sich die Stadt zu einem bedeutenden Standort der Fahrzeugproduktion in der Region Brandenburg.</p>
+
+        <h2>Die Fahrzeugfabrik</h2>
+        <p>Im Zentrum der Industriegeschichte steht das ehemalige Fahrzeugwerk, das über Jahrzehnte hinweg tausende Arbeitsplätze bot und das Stadtbild nachhaltig prägte. Hier wurden LKW und andere Nutzfahrzeuge für die gesamte DDR produziert.</p>
+
+        <h2>Wandel nach der Wende</h2>
+        <p>Nach der Wiedervereinigung 1990 erlebte Ludwigsfelde – wie viele ostdeutsche Industriestandorte – einen tiefgreifenden Strukturwandel. Neue Unternehmen siedelten sich an und die Stadt erfand sich neu.</p>
+
+        <h2>Ludwigsfelde heute</h2>
+        <p>Heute erinnern historische Gebäude, Denkmäler und das Stadtmuseum an die reiche industrielle Vergangenheit. Die Geschichte lebt in der Erinnerung der Menschen und in den erhaltenen Zeugnissen der Industriekultur fort.</p>
+    </div>
+</main>
+
+<footer>
+    <div>
+        <a href="Kontakt.html">Impressum</a> &nbsp;|&nbsp; © 2025 Industriegeschichte Ludwigsfelde
+    </div>
+</footer>
+
+<script>
+    const burgerBtn = document.getElementById('burgerBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    burgerBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('open');
+        burgerBtn.classList.toggle('open');
+    });
+</script>
+</body>
+</html>
