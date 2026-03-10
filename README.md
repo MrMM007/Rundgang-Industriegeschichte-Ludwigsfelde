@@ -7,8 +7,8 @@ Interaktiver Karte/ Rundgang mit Informationstexten und historischen Bildern zur
 Aufgabenaufteilung:\
 Malte - Leitung\
 Sophie K., Birk, Jonathan - Website\
-Theo und Jason - Informationen und Bilder raussuchen\
-Constanze, Ella und Max – Interaktive Karte – gestalten und Funktionen hinzufügen
+Theo, Jason und Max - Informationen und Bilder raussuchen\
+Constanze, Ella und Domenik – Interaktive Karte – gestalten und Funktionen hinzufügen
 
 Website: \
 Wie soll die Website gestaltet sein? Verein \
