@@ -1,0 +1,676 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<gpx version="1.1" creator="outdooractive - http://www.outdooractive.com" xmlns="http://www.topografix.com/GPX/1/1" xmlns:oa="http://www.outdooractive.com/GPX/Extensions/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd http://www.outdooractive.com/GPX/Extensions/1 https://www.outdooractive.com/schema/gpx_extensions.xsd">
+  <metadata>
+    <name>Test Rundgang 1-3</name>
+    <author>
+      <name>Ella - Community</name>
+    </author>
+    <link href="https://www.outdooractive.com/r/335730684"/>
+    <time>2026-03-17T08:00:11.323Z</time>
+    <extensions>
+      <oa:oaCategory>themeTrail</oa:oaCategory>
+    </extensions>
+  </metadata>
+  <trk>
+    <name>Test Rundgang 1-3</name>
+    <type>themeTrail</type>
+    <trkseg>
+      <trkpt lat="52.298362" lon="13.267227">
+        <ele>42.8</ele>
+        <name>Stadt- und Technikmuseum Ludwigsfelde, Ludwigsfelde</name>
+        <extensions>
+          <oa:locType>routingNode</oa:locType>
+          <oa:Extension>
+            <oa:mapZoom>18</oa:mapZoom>
+          </oa:Extension>
+        </extensions>
+      </trkpt>
+      <trkpt lat="52.298364" lon="13.267209">
+        <ele>42.8</ele>
+      </trkpt>
+      <trkpt lat="52.298394" lon="13.266896">
+        <ele>42.8</ele>
+      </trkpt>
+      <trkpt lat="52.2984" lon="13.266835">
+        <ele>42.8</ele>
+      </trkpt>
+      <trkpt lat="52.298409" lon="13.266739">
+        <ele>42.8</ele>
+      </trkpt>
+      <trkpt lat="52.298418" lon="13.266642">
+        <ele>42.9</ele>
+      </trkpt>
+      <trkpt lat="52.298423" lon="13.266593">
+        <ele>42.9</ele>
+      </trkpt>
+      <trkpt lat="52.298401" lon="13.266442">
+        <ele>42.9</ele>
+      </trkpt>
+      <trkpt lat="52.298392" lon="13.266445">
+        <ele>42.9</ele>
+      </trkpt>
+      <trkpt lat="52.298363" lon="13.26646">
+        <ele>42.9</ele>
+      </trkpt>
+      <trkpt lat="52.298337" lon="13.266484">
+        <ele>42.9</ele>
+      </trkpt>
+      <trkpt lat="52.298314" lon="13.266518">
+        <ele>42.9</ele>
+      </trkpt>
+      <trkpt lat="52.298261" lon="13.266518">
+        <ele>42.8</ele>
+        <name>Stadt- und Technikmuseum Ludwigsfelde, Ludwigsfelde</name>
+        <desc><![CDATA[
+1843 wurde der Haltepunkt Ludwigsfelde erweitert. Mit dem Ausbau der Berlin-Anhaltinischen Eisenbahn begannen struktureingreifende Veränderungen in der Region.
+Durch die Eisenbahn konnten die Erzeugnisse der umliegenden Gutbezirke schneller und billiger abtransportiert werden.
+Gleichzeitig wurde durch die Königlich-Preußische Post eine Postanstalt in Ludwigsfelde eingerichtet. Zu dieser Zeit gab es als Ort nur die kleine Siedlung Dahmsdorf, östlich der Bahnlinie.
+Bis 1886 nahm der Güter- und Personenverkehr solchen Umfang an, dass der Bau des heute noch stehenden Bahnhofsgebäudes (jetzt Stadt- und Technikmuseum) erforderlich war.
+1928 wurden in Preußen die Gutbezirke aufgelöst.
+Durch Beschluss des Staatsministeriums vom 28. September 1928 sind der Damsdorfer Ortsteil des Gutbezirks Genshagen und der Ludwigsfelder Ortsteil des Gutbezirks Löwenbruch zur Landgemeinde
+Ludwigsfelde zusammengelegt worden. 
+
+
+
+Autoren: Dietrich Carow, Manfred Krebs
+
+]]></desc>
+        <sym>waypointFlagComb</sym>
+        <extensions>
+          <oa:locType>routingNode</oa:locType>
+          <oa:Extension>
+            <oa:mapZoom>15</oa:mapZoom>
+          </oa:Extension>
+        </extensions>
+      </trkpt>
+      <trkpt lat="52.298314" lon="13.266518">
+        <ele>42.9</ele>
+      </trkpt>
+      <trkpt lat="52.298337" lon="13.266484">
+        <ele>42.9</ele>
+      </trkpt>
+      <trkpt lat="52.298363" lon="13.26646">
+        <ele>42.9</ele>
+      </trkpt>
+      <trkpt lat="52.298392" lon="13.266445">
+        <ele>42.9</ele>
+      </trkpt>
+      <trkpt lat="52.298401" lon="13.266442">
+        <ele>42.9</ele>
+      </trkpt>
+      <trkpt lat="52.298421" lon="13.26644">
+        <ele>42.9</ele>
+      </trkpt>
+      <trkpt lat="52.298451" lon="13.266445">
+        <ele>42.9</ele>
+      </trkpt>
+      <trkpt lat="52.29848" lon="13.26646">
+        <ele>42.9</ele>
+      </trkpt>
+      <trkpt lat="52.298506" lon="13.266485">
+        <ele>42.9</ele>
+      </trkpt>
+      <trkpt lat="52.298528" lon="13.266518">
+        <ele>42.9</ele>
+      </trkpt>
+      <trkpt lat="52.298545" lon="13.266557">
+        <ele>42.9</ele>
+      </trkpt>
+      <trkpt lat="52.298557" lon="13.266602">
+        <ele>42.9</ele>
+      </trkpt>
+      <trkpt lat="52.298564" lon="13.266653">
+        <ele>42.9</ele>
+      </trkpt>
+      <trkpt lat="52.298619" lon="13.266785">
+        <ele>42.9</ele>
+      </trkpt>
+      <trkpt lat="52.298765" lon="13.266808">
+        <ele>43.0</ele>
+      </trkpt>
+      <trkpt lat="52.29916" lon="13.266904">
+        <ele>43.1</ele>
+      </trkpt>
+      <trkpt lat="52.299555" lon="13.267">
+        <ele>43.2</ele>
+      </trkpt>
+      <trkpt lat="52.299577" lon="13.267006">
+        <ele>43.2</ele>
+      </trkpt>
+      <trkpt lat="52.299597" lon="13.266908">
+        <ele>43.2</ele>
+      </trkpt>
+      <trkpt lat="52.2997" lon="13.266501">
+        <ele>43.5</ele>
+      </trkpt>
+      <trkpt lat="52.299807" lon="13.266077">
+        <ele>43.8</ele>
+      </trkpt>
+      <trkpt lat="52.299914" lon="13.265653">
+        <ele>44.1</ele>
+      </trkpt>
+      <trkpt lat="52.299935" lon="13.265573">
+        <ele>44.1</ele>
+      </trkpt>
+      <trkpt lat="52.299961" lon="13.265564">
+        <ele>44.1</ele>
+      </trkpt>
+      <trkpt lat="52.299992" lon="13.265544">
+        <ele>44.1</ele>
+      </trkpt>
+      <trkpt lat="52.300025" lon="13.265496">
+        <ele>44.1</ele>
+      </trkpt>
+      <trkpt lat="52.300051" lon="13.265431">
+        <ele>44.2</ele>
+      </trkpt>
+      <trkpt lat="52.300215" lon="13.264881">
+        <ele>44.4</ele>
+      </trkpt>
+      <trkpt lat="52.300393" lon="13.264243">
+        <ele>44.7</ele>
+      </trkpt>
+      <trkpt lat="52.300427" lon="13.26427">
+        <ele>44.7</ele>
+      </trkpt>
+      <trkpt lat="52.300482" lon="13.264308">
+        <ele>44.6</ele>
+      </trkpt>
+      <trkpt lat="52.300687" lon="13.264449">
+        <ele>44.5</ele>
+      </trkpt>
+      <trkpt lat="52.300756" lon="13.264493">
+        <ele>44.5</ele>
+      </trkpt>
+      <trkpt lat="52.301085" lon="13.264652">
+        <ele>44.4</ele>
+      </trkpt>
+      <trkpt lat="52.301276" lon="13.264707">
+        <ele>44.5</ele>
+      </trkpt>
+      <trkpt lat="52.301421" lon="13.264747">
+        <ele>44.5</ele>
+      </trkpt>
+      <trkpt lat="52.301632" lon="13.264785">
+        <ele>44.5</ele>
+      </trkpt>
+      <trkpt lat="52.301642" lon="13.264477">
+        <ele>44.5</ele>
+      </trkpt>
+      <trkpt lat="52.301645" lon="13.264406">
+        <ele>44.5</ele>
+      </trkpt>
+      <trkpt lat="52.301664" lon="13.263877">
+        <ele>44.5</ele>
+      </trkpt>
+      <trkpt lat="52.301666" lon="13.263813">
+        <ele>44.6</ele>
+      </trkpt>
+      <trkpt lat="52.301667" lon="13.263751">
+        <ele>44.6</ele>
+      </trkpt>
+      <trkpt lat="52.301979" lon="13.263749">
+        <ele>44.6</ele>
+      </trkpt>
+      <trkpt lat="52.302179" lon="13.263727">
+        <ele>44.6</ele>
+      </trkpt>
+      <trkpt lat="52.30214" lon="13.263006">
+        <ele>44.7</ele>
+      </trkpt>
+      <trkpt lat="52.302384" lon="13.262843">
+        <ele>44.8</ele>
+      </trkpt>
+      <trkpt lat="52.302563" lon="13.263344">
+        <ele>44.7</ele>
+      </trkpt>
+      <trkpt lat="52.302741" lon="13.263845">
+        <ele>44.7</ele>
+      </trkpt>
+      <trkpt lat="52.302919" lon="13.264346">
+        <ele>44.6</ele>
+      </trkpt>
+      <trkpt lat="52.303082" lon="13.264833">
+        <ele>44.6</ele>
+      </trkpt>
+      <trkpt lat="52.303245" lon="13.265321">
+        <ele>44.6</ele>
+      </trkpt>
+      <trkpt lat="52.303408" lon="13.265808">
+        <ele>44.5</ele>
+      </trkpt>
+      <trkpt lat="52.303467" lon="13.265761">
+        <ele>44.5</ele>
+      </trkpt>
+      <trkpt lat="52.303511" lon="13.265728">
+        <ele>44.5</ele>
+      </trkpt>
+      <trkpt lat="52.303671" lon="13.266171">
+        <ele>44.4</ele>
+      </trkpt>
+      <trkpt lat="52.303791" lon="13.266262">
+        <ele>44.3</ele>
+      </trkpt>
+      <trkpt lat="52.30389" lon="13.266243">
+        <ele>44.2</ele>
+      </trkpt>
+      <trkpt lat="52.303943" lon="13.266262">
+        <ele>44.2</ele>
+      </trkpt>
+      <trkpt lat="52.303994" lon="13.266304">
+        <ele>44.1</ele>
+      </trkpt>
+      <trkpt lat="52.30429" lon="13.266049">
+        <ele>43.9</ele>
+      </trkpt>
+      <trkpt lat="52.304586" lon="13.265794">
+        <ele>43.8</ele>
+      </trkpt>
+      <trkpt lat="52.304602" lon="13.265893">
+        <ele>43.8</ele>
+      </trkpt>
+      <trkpt lat="52.304609" lon="13.265914">
+        <ele>43.8</ele>
+      </trkpt>
+      <trkpt lat="52.304629" lon="13.265954">
+        <ele>43.7</ele>
+      </trkpt>
+      <trkpt lat="52.304647" lon="13.26598">
+        <ele>43.7</ele>
+      </trkpt>
+      <trkpt lat="52.304686" lon="13.266003">
+        <ele>43.8</ele>
+      </trkpt>
+      <trkpt lat="52.30471" lon="13.266017">
+        <ele>43.9</ele>
+      </trkpt>
+      <trkpt lat="52.304739" lon="13.266025">
+        <ele>44.0</ele>
+      </trkpt>
+      <trkpt lat="52.304764" lon="13.266047">
+        <ele>44.1</ele>
+      </trkpt>
+      <trkpt lat="52.30478" lon="13.266071">
+        <ele>44.2</ele>
+      </trkpt>
+      <trkpt lat="52.304833" lon="13.266022">
+        <ele>45.0</ele>
+      </trkpt>
+      <trkpt lat="52.30489" lon="13.265968">
+        <ele>46.4</ele>
+      </trkpt>
+      <trkpt lat="52.304885" lon="13.265951">
+        <ele>46.4</ele>
+      </trkpt>
+      <trkpt lat="52.30488" lon="13.265895">
+        <ele>46.6</ele>
+      </trkpt>
+      <trkpt lat="52.304885" lon="13.265839">
+        <ele>47.1</ele>
+      </trkpt>
+      <trkpt lat="52.304896" lon="13.265782">
+        <ele>47.5</ele>
+      </trkpt>
+      <trkpt lat="52.304914" lon="13.265733">
+        <ele>48.0</ele>
+      </trkpt>
+      <trkpt lat="52.304941" lon="13.265697">
+        <ele>48.7</ele>
+      </trkpt>
+      <trkpt lat="52.305172" lon="13.265489">
+        <ele>51.7</ele>
+      </trkpt>
+      <trkpt lat="52.305404" lon="13.265281">
+        <ele>47.2</ele>
+      </trkpt>
+      <trkpt lat="52.305686" lon="13.265798">
+        <ele>44.5</ele>
+      </trkpt>
+      <trkpt lat="52.305831" lon="13.266266">
+        <ele>44.5</ele>
+      </trkpt>
+      <trkpt lat="52.305977" lon="13.266734">
+        <ele>44.6</ele>
+      </trkpt>
+      <trkpt lat="52.306184" lon="13.267286">
+        <ele>44.1</ele>
+      </trkpt>
+      <trkpt lat="52.306344" lon="13.267711">
+        <ele>43.8</ele>
+        <name>1936 Beginn Autobahnbau</name>
+        <desc><![CDATA[Die Bedeutung als Verkehrsknotenpunkt und Kommunikationszentrum gewinnt immer mehr an Bedeutung.
+Der Beginn des Jahres 1936 brachte für den Kreis Teltow die Inangriffnahme der Bauarbeiten am Berliner Reichsautobahnring, und zwar auf der so genannten Südtangente, die beinahe in west-östlicher Richtung durch den Kreis führt.
+Die Industrialisierung von und um Berlin machten diese Verbesserung der Zufahrtsstraßen notwendig.
+Ein wichtiger Abzweig, das heutige Schönefelder Kreuz (früher „Breslauer Dreieck“) war eine zusätzliche Verbindung in südöstlicher Richtung.
+Der Abschluss der Arbeiten an der Südtangente erfolgte im Dezember 1938.
+Es war eines der gewaltigsten Bauvorhaben Deutschlands. Mit dieser Strecke wurde der 3000. Kilometer Autobahn mit Anschlussstrecken nach Dresden und Breslau übergeben.
+
+Autoren: Dietrich Carow, Manfred Krebs]]></desc>
+        <sym>waypointFlagComb</sym>
+        <extensions>
+          <oa:Extension>
+            <oa:mapZoom>17</oa:mapZoom>
+          </oa:Extension>
+        </extensions>
+      </trkpt>
+      <trkpt lat="52.306392" lon="13.267838">
+        <ele>43.7</ele>
+      </trkpt>
+      <trkpt lat="52.306599" lon="13.26839">
+        <ele>43.4</ele>
+      </trkpt>
+      <trkpt lat="52.306805" lon="13.268948">
+        <ele>44.2</ele>
+      </trkpt>
+      <trkpt lat="52.306915" lon="13.269222">
+        <ele>43.6</ele>
+      </trkpt>
+      <trkpt lat="52.306954" lon="13.269318">
+        <ele>43.5</ele>
+      </trkpt>
+      <trkpt lat="52.306958" lon="13.269386">
+        <ele>43.6</ele>
+      </trkpt>
+      <trkpt lat="52.307099" lon="13.269399">
+        <ele>43.6</ele>
+      </trkpt>
+      <trkpt lat="52.307258" lon="13.269377">
+        <ele>43.8</ele>
+      </trkpt>
+      <trkpt lat="52.307456" lon="13.269347">
+        <ele>44.1</ele>
+      </trkpt>
+      <trkpt lat="52.307578" lon="13.269366">
+        <ele>44.3</ele>
+      </trkpt>
+      <trkpt lat="52.30771" lon="13.269454">
+        <ele>44.4</ele>
+      </trkpt>
+      <trkpt lat="52.308146" lon="13.269588">
+        <ele>44.5</ele>
+      </trkpt>
+      <trkpt lat="52.308318" lon="13.269606">
+        <ele>44.6</ele>
+      </trkpt>
+      <trkpt lat="52.308657" lon="13.26972">
+        <ele>44.6</ele>
+      </trkpt>
+      <trkpt lat="52.308925" lon="13.269801">
+        <ele>44.4</ele>
+      </trkpt>
+      <trkpt lat="52.309162" lon="13.269899">
+        <ele>44.3</ele>
+      </trkpt>
+      <trkpt lat="52.309325" lon="13.269887">
+        <ele>44.4</ele>
+      </trkpt>
+      <trkpt lat="52.309657" lon="13.269933">
+        <ele>44.1</ele>
+      </trkpt>
+      <trkpt lat="52.309886" lon="13.269925">
+        <ele>44.0</ele>
+      </trkpt>
+      <trkpt lat="52.310116" lon="13.269916">
+        <ele>44.0</ele>
+      </trkpt>
+      <trkpt lat="52.310457" lon="13.269489">
+        <ele>44.2</ele>
+      </trkpt>
+      <trkpt lat="52.310799" lon="13.269063">
+        <ele>44.1</ele>
+      </trkpt>
+      <trkpt lat="52.31114" lon="13.268636">
+        <ele>44.0</ele>
+      </trkpt>
+      <trkpt lat="52.311425" lon="13.268269">
+        <ele>43.9</ele>
+      </trkpt>
+      <trkpt lat="52.311709" lon="13.267903">
+        <ele>43.7</ele>
+      </trkpt>
+      <trkpt lat="52.311993" lon="13.267536">
+        <ele>43.6</ele>
+      </trkpt>
+      <trkpt lat="52.312122" lon="13.267381">
+        <ele>43.6</ele>
+      </trkpt>
+      <trkpt lat="52.312153" lon="13.267123">
+        <ele>43.5</ele>
+      </trkpt>
+      <trkpt lat="52.311875" lon="13.267027">
+        <ele>43.6</ele>
+      </trkpt>
+      <trkpt lat="52.311634" lon="13.266893">
+        <ele>43.7</ele>
+      </trkpt>
+      <trkpt lat="52.311344" lon="13.266748">
+        <ele>43.9</ele>
+      </trkpt>
+      <trkpt lat="52.311071" lon="13.266512">
+        <ele>44.0</ele>
+      </trkpt>
+      <trkpt lat="52.310888" lon="13.266174">
+        <ele>44.1</ele>
+      </trkpt>
+      <trkpt lat="52.310802" lon="13.265761">
+        <ele>44.0</ele>
+      </trkpt>
+      <trkpt lat="52.310722" lon="13.26539">
+        <ele>43.9</ele>
+      </trkpt>
+      <trkpt lat="52.31064" lon="13.265113">
+        <ele>43.9</ele>
+      </trkpt>
+      <trkpt lat="52.310693" lon="13.26461">
+        <ele>43.7</ele>
+      </trkpt>
+      <trkpt lat="52.310745" lon="13.264106">
+        <ele>43.5</ele>
+      </trkpt>
+      <trkpt lat="52.310797" lon="13.263603">
+        <ele>43.4</ele>
+      </trkpt>
+      <trkpt lat="52.310845" lon="13.263156">
+        <ele>43.3</ele>
+      </trkpt>
+      <trkpt lat="52.310892" lon="13.26271">
+        <ele>43.2</ele>
+      </trkpt>
+      <trkpt lat="52.311324" lon="13.262756">
+        <ele>43.0</ele>
+      </trkpt>
+      <trkpt lat="52.311757" lon="13.262803">
+        <ele>42.7</ele>
+      </trkpt>
+      <trkpt lat="52.311857" lon="13.262895">
+        <ele>42.7</ele>
+      </trkpt>
+      <trkpt lat="52.311941" lon="13.262968">
+        <ele>42.7</ele>
+      </trkpt>
+      <trkpt lat="52.31203" lon="13.26302">
+        <ele>42.6</ele>
+      </trkpt>
+      <trkpt lat="52.312124" lon="13.26307">
+        <ele>42.6</ele>
+      </trkpt>
+      <trkpt lat="52.312214" lon="13.263105">
+        <ele>42.6</ele>
+      </trkpt>
+      <trkpt lat="52.312308" lon="13.263131">
+        <ele>42.6</ele>
+      </trkpt>
+      <trkpt lat="52.312565" lon="13.263199">
+        <ele>42.5</ele>
+      </trkpt>
+      <trkpt lat="52.312822" lon="13.263267">
+        <ele>42.5</ele>
+      </trkpt>
+      <trkpt lat="52.313152" lon="13.263359">
+        <ele>42.5</ele>
+      </trkpt>
+      <trkpt lat="52.313482" lon="13.263451">
+        <ele>42.6</ele>
+      </trkpt>
+      <trkpt lat="52.313738" lon="13.263519">
+        <ele>42.6</ele>
+      </trkpt>
+      <trkpt lat="52.313995" lon="13.263587">
+        <ele>42.7</ele>
+      </trkpt>
+      <trkpt lat="52.314359" lon="13.263687">
+        <ele>42.9</ele>
+      </trkpt>
+      <trkpt lat="52.314427" lon="13.263736">
+        <ele>42.9</ele>
+      </trkpt>
+      <trkpt lat="52.314715" lon="13.263812">
+        <ele>43.2</ele>
+      </trkpt>
+      <trkpt lat="52.315003" lon="13.263888">
+        <ele>43.3</ele>
+      </trkpt>
+      <trkpt lat="52.315171" lon="13.263949">
+        <ele>43.2</ele>
+      </trkpt>
+      <trkpt lat="52.315581" lon="13.264074">
+        <ele>42.8</ele>
+      </trkpt>
+      <trkpt lat="52.315598" lon="13.264112">
+        <ele>42.8</ele>
+      </trkpt>
+      <trkpt lat="52.315609" lon="13.263975">
+        <ele>42.8</ele>
+      </trkpt>
+      <trkpt lat="52.315622" lon="13.263829">
+        <ele>42.8</ele>
+      </trkpt>
+      <trkpt lat="52.315634" lon="13.263818">
+        <ele>42.8</ele>
+      </trkpt>
+      <trkpt lat="52.315645" lon="13.263805">
+        <ele>42.8</ele>
+      </trkpt>
+      <trkpt lat="52.315673" lon="13.263695">
+        <ele>42.8</ele>
+      </trkpt>
+      <trkpt lat="52.3157" lon="13.263253">
+        <ele>42.7</ele>
+      </trkpt>
+      <trkpt lat="52.315727" lon="13.26281">
+        <ele>42.7</ele>
+      </trkpt>
+      <trkpt lat="52.315763" lon="13.262169">
+        <ele>42.7</ele>
+      </trkpt>
+      <trkpt lat="52.3158" lon="13.261527">
+        <ele>42.7</ele>
+      </trkpt>
+      <trkpt lat="52.315816" lon="13.261242">
+        <ele>42.7</ele>
+        <name>1936 - 1945 Daimler-Benz Motoren GmbH Genshagen und die Fliegerschule Berlin - Genshagen</name>
+        <desc><![CDATA[Die Daimler-Benz AG erhielt 1935 vom RLM Reichsluftfahrtministerium den Auftrag, ein Großserienwerk für Flugmotoren zu bauen.
+Am 24.01.1936 erfolgte die Gründung der Daimler-Benz Motoren GmbH in Genshagen. Der Baubeginn erfolgte auf einer Fläche von 3,75 km2. Im Mai 1936 hatte das Werk eine Stammbelegschaft von 180 Personen. Im Frühjahr 1936 wurde mit dem Bau des Werkes begonnen und bereits im Herbst des gleichen Jahres waren die
+ersten Werkhallen fertig, die Produktion konnte anlaufen.
+Durch den Bau von Flugmotoren in Großserie hatte das Werk einen wesentlichen Anteil am Aufbau der Wirtschaft und nicht zuletzt auch am Wachstum des Ortes
+Ludwigsfelde.
+Im Juni 1937 bestand die Belegschaft aus 5.600 Mitarbeitern.
+Im Februar 1937 erfolgte die Fertigstellung des ersten Flugmotors. Das Werk war inzwischen auf 10 Produktionshallen angewachsen. Die Werkstattfläche betrug ca. 88.000 m2 und die Lagerfläche ca. 13.000 m2.
+Im Mai 1937 lief Genshagen programmgemäß. Es waren bereits 35 Motoren montiert. Trotz anfänglicher Schwierigkeiten bei der Umstellung auf den Typ DB 601 fertigt das Werk bis Dezember 1937 615 Stück DB 600 und 150 Stück DB 601.
+
+Autoren: Dietrich Carow, Manfred Krebs, Peter Riehmann]]></desc>
+        <sym>waypointFlagComb</sym>
+        <extensions>
+          <oa:Extension>
+            <oa:mapZoom>17</oa:mapZoom>
+          </oa:Extension>
+        </extensions>
+      </trkpt>
+      <trkpt lat="52.3158" lon="13.261527">
+        <ele>42.7</ele>
+      </trkpt>
+      <trkpt lat="52.315763" lon="13.262169">
+        <ele>42.7</ele>
+      </trkpt>
+      <trkpt lat="52.315727" lon="13.26281">
+        <ele>42.7</ele>
+      </trkpt>
+      <trkpt lat="52.3157" lon="13.263253">
+        <ele>42.7</ele>
+      </trkpt>
+      <trkpt lat="52.315673" lon="13.263695">
+        <ele>42.8</ele>
+      </trkpt>
+      <trkpt lat="52.315654" lon="13.26377">
+        <ele>42.8</ele>
+        <name> 1948 - 1952 Hauptreparaturenwerk Ludwigsfelde (HRW)</name>
+        <desc><![CDATA[Im 2. Halbjahr 1945 wurde in Ludwigsfelde eine kommunale Autoreparaturwerkstatt eingerichtet für die
+die Instandsetzung von Gemeindefahrzeugen und Fahrzeugen der Roten Armee. 
+
+Das u.g. Dokument beinhaltet einen Abriß zur Historie und zeigt in Fotos den Aufbau, die Werkstätten und
+Beispiele der Reparaturpalette.
+Autor: Dietrich Carow
+
+Autor: Dietrich Carow
+
+]]></desc>
+        <sym>waypointFlagComb</sym>
+        <extensions>
+          <oa:Extension>
+            <oa:mapZoom>17</oa:mapZoom>
+          </oa:Extension>
+        </extensions>
+      </trkpt>
+      <trkpt lat="52.315645" lon="13.263805">
+        <ele>42.8</ele>
+      </trkpt>
+      <trkpt lat="52.315634" lon="13.263818">
+        <ele>42.8</ele>
+      </trkpt>
+      <trkpt lat="52.315622" lon="13.263829">
+        <ele>42.8</ele>
+      </trkpt>
+      <trkpt lat="52.315609" lon="13.263975">
+        <ele>42.8</ele>
+      </trkpt>
+      <trkpt lat="52.315598" lon="13.264112">
+        <ele>42.8</ele>
+      </trkpt>
+      <trkpt lat="52.31564" lon="13.264202">
+        <ele>42.8</ele>
+      </trkpt>
+      <trkpt lat="52.315699" lon="13.264223">
+        <ele>42.8</ele>
+      </trkpt>
+      <trkpt lat="52.315668" lon="13.264669">
+        <ele>42.8</ele>
+      </trkpt>
+      <trkpt lat="52.315636" lon="13.265115">
+        <ele>42.8</ele>
+      </trkpt>
+      <trkpt lat="52.315627" lon="13.265266">
+        <ele>42.8</ele>
+      </trkpt>
+      <trkpt lat="52.315596" lon="13.265739">
+        <ele>42.9</ele>
+      </trkpt>
+      <trkpt lat="52.315568" lon="13.266167">
+        <ele>42.9</ele>
+        <name>1952-1965 VEB Industriewerke Ludwigsfelde (IWL)</name>
+        <desc><![CDATA[Die Entwicklung des VEB Industriewerke Ludwigsfelde von 1952 bis 1965 wird in der Diplomarbeit von H. Marvin Brendel:
+       „VEB Industriewerke Ludwigsfelde (1952 – 1965)“       beschrieben, siehe u.g. Dokumente, Teil 1 und Teil 2.
+
+Die Diplomarbeit von Dipl.-Ing. Marvin Brendel wurde am 28. Februar 2006 an der Europa-Universität „Viadrina“ Frankfurt/Oder eingereicht. Der Untertitel der Arbeit lautet:
+       „Zwischen Wiederaufrüstung, Arbeiteraufstand und Mauerbau“
+
+Autoren: Marvin Brendel, Hermann Fröhlich]]></desc>
+        <sym>waypointFlagComb</sym>
+        <extensions>
+          <oa:Extension>
+            <oa:mapZoom>17</oa:mapZoom>
+          </oa:Extension>
+        </extensions>
+      </trkpt>
+    </trkseg>
+  </trk>
+</gpx>
