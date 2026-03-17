@@ -631,3 +631,13 @@ a {
 
 .lightbox-prev { left: 20px; }
 .lightbox-next { right: 20px; }
+
+header {
+    position: relative;
+    z-index: 1000;
+}
+
+nav {
+    position: relative;
+    z-index: 999;
+}
