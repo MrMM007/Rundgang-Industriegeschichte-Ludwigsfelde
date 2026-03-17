@@ -35,3 +35,5 @@ Route
 1. Berlin - anhaltinische Eisenbahn -> 1843 Haltepunkt Ludwigsfelde, Postanstalt
 2. Autobahn -> 1936 Beginn Autobahnbau
 3. 1936-1945 Daimler-Benz Motoren GmbH Genshagen UND Die Fliegertechnische Vorschule der Luftwaffe, Berlin-Genshagen
+
+4. https://www.outdooractive.com/de/route/themenweg/flaeming/test-rundgang-1-3/335730684/#caml=ack,26xu4i,8nf3c9,0,0&dm=1
