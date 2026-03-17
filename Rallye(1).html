@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rallye – Industriegeschichte Ludwigsfelde</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+    <style>
+        #rallyeMap {
+            width: 100%;
+            height: 460px;
+            border-radius: 8px;
+            box-shadow: 0 8px 32px rgba(44,62,80,0.18);
+            margin-bottom: 2rem;
+        }
+
+        .rallye-station {
+            cursor: pointer;
+            user-select: none;
+        }
+
+        .station-toggle {
+            font-size: 1.1rem;
+            color: var(--rust);
+            transition: transform 0.3s;
+            flex-shrink: 0;
+        }
+
+        .rallye-station.open .station-toggle {
+            transform: rotate(45deg);
+        }
+
+        .station-body h3 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .station-details {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease, opacity 0.3s ease;
+            opacity: 0;
+        }
+
+        .rallye-station.open .station-details {
+            max-height: 500px;
+            opacity: 1;
+        }
+
+        .station-details p {
+            font-size: 0.9rem;
+            color: var(--iron);
+            line-height: 1.7;
+            margin-top: 0.75rem;
+            border-top: 1px solid rgba(44,62,80,0.08);
+            padding-top: 0.75rem;
+            margin-bottom: 0;
+        }
+
+        .leaflet-popup-content-wrapper {
+            border-radius: 6px;
+            box-shadow: 0 6px 20px rgba(44,62,80,0.2);
+            border-top: 3px solid #c0392b;
+        }
+
+        .leaflet-popup-content {
+            margin: 10px 13px;
+            font-family: 'Source Sans 3', sans-serif;
+            font-size: 0.85rem;
+            color: #2c3e50;
+        }
+
+        .popup-nr {
+            display: inline-block;
+            background: #c0392b;
+            color: #fff;
+            font-size: 0.68rem;
+            font-weight: 700;
+            border-radius: 3px;
+            padding: 1px 6px;
+            margin-bottom: 0.35rem;
+        }
+
+        .popup-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 0.9rem;
+            font-weight: 700;
+            color: #2c3e50;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1><a href="index.html">Industriegeschichte Ludwigsfelde</a></h1>
+    <div class="header-right">
+        <a class="home-icon" href="index.html" title="Startseite">
+            <img src="bilder/icons8-zuhause-32.png" alt="Startseite">
+        </a>
+        <button class="burger" id="burgerBtn">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</header>
+
+<nav id="mobileMenu">
+    <ul>
+        <li><a href="index.html">Startseite</a></li>
+        <li><a href="Geschichte.html">Geschichte</a></li>
+        <li><a href="Rallye.html">Rallye</a></li>
+        <li><a href="Galerie.html">Galerie</a></li>
+        <li><a href="Überuns.html">Über uns</a></li>
+        <li><a href="Kontakt.html">Kontakt</a></li>
+    </ul>
+</nav>
+
+<main>
+    <div class="page-hero">
+        <h2 class="page-hero-title">Stadt-Rallye</h2>
+        <p class="page-hero-subtitle">Ein Informationsrundgang durch die Industriegeschichte Ludwigsfeldes</p>
+    </div>
+
+    <div class="page-content">
+
+        <h2>Über die Rallye</h2>
+        <p>Dieser Rundgang führt dich zu drei historischen Orten in Ludwigsfelde, die stellvertretend für die industrielle Entwicklung der Stadt stehen – von den Anfängen der Eisenbahn 1843 über den Autobahnbau 1936 bis zum Flugmotorenwerk der Daimler-Benz Motoren GmbH in Genshagen. Klicke auf eine Station oder auf die Markierungen in der Karte, um mehr zu erfahren.</p>
+
+        <div id="rallyeMap"></div>
+
+        <div class="rallye-station" id="s1" onclick="toggleStation('s1', 0)">
+            <div class="station-number">01</div>
+            <div class="station-body">
+                <h3>Stadt- und Technikmuseum Ludwigsfelde <span class="station-toggle">+</span></h3>
+                <div class="station-details">
+                    <p>1843 wurde der Haltepunkt Ludwigsfelde erweitert. Mit dem Ausbau der Berlin-Anhaltinischen Eisenbahn begannen struktureingreifende Veränderungen in der Region. Durch die Eisenbahn konnten die Erzeugnisse der umliegenden Gutbezirke schneller und billiger abtransportiert werden. Bis 1886 nahm der Güter- und Personenverkehr solchen Umfang an, dass der Bau des heute noch stehenden Bahnhofsgebäudes – jetzt Stadt- und Technikmuseum – erforderlich war.<br><br><em>Autoren: Dietrich Carow, Manfred Krebs</em></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="rallye-station" id="s2" onclick="toggleStation('s2', 1)">
+            <div class="station-number">02</div>
+            <div class="station-body">
+                <h3>Beginn des Autobahnbaus 1936 <span class="station-toggle">+</span></h3>
+                <div class="station-details">
+                    <p>Der Beginn des Jahres 1936 brachte für den Kreis Teltow die Inangriffnahme der Bauarbeiten am Berliner Reichsautobahnring – der sogenannten Südtangente, die beinahe in west-östlicher Richtung durch den Kreis führt. Die Industrialisierung von und um Berlin machte diese Verbesserung notwendig. Der Abschluss der Arbeiten erfolgte im Dezember 1938 – mit diesem Abschnitt wurde der 3.000. Kilometer Autobahn mit Anschlussstrecken nach Dresden und Breslau übergeben.<br><br><em>Autoren: Dietrich Carow, Manfred Krebs</em></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="rallye-station" id="s3" onclick="toggleStation('s3', 2)">
+            <div class="station-number">03</div>
+            <div class="station-body">
+                <h3>Daimler-Benz Motoren GmbH Genshagen (1936–1945) <span class="station-toggle">+</span></h3>
+                <div class="station-details">
+                    <p>Die Daimler-Benz AG erhielt 1935 vom Reichsluftfahrtministerium den Auftrag, ein Großserienwerk für Flugmotoren zu bauen. Am 24.01.1936 erfolgte die Gründung der Daimler-Benz Motoren GmbH in Genshagen auf einer Fläche von 3,75 km². Im Juni 1937 hatte das Werk bereits 5.600 Mitarbeiter. Im Februar 1937 wurde der erste Flugmotor fertiggestellt – bis Dezember 1937 fertigte das Werk 615 Stück DB 600 und 150 Stück DB 601.<br><br><em>Autoren: Dietrich Carow, Manfred Krebs, Peter Riehmann</em></p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</main>
+
+<footer>
+    <div>
+        <a href="Kontakt.html">Impressum</a> &nbsp;|&nbsp; © 2026 Industriegeschichte Ludwigsfelde
+    </div>
+</footer>
+
+<script>
+    document.getElementById('burgerBtn').addEventListener('click', () => {
+        document.getElementById('mobileMenu').classList.toggle('open');
+        document.getElementById('burgerBtn').classList.toggle('open');
+    });
+
+    // Karte
+    const map = L.map('rallyeMap', { scrollWheelZoom: false });
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+        maxZoom: 19
+    }).addTo(map);
+
+    const trackPoints = [
+        [52.298362,13.267227],[52.298364,13.267209],[52.298394,13.266896],[52.2984,13.266835],
+        [52.298409,13.266739],[52.298418,13.266642],[52.298423,13.266593],[52.298401,13.266442],
+        [52.298392,13.266445],[52.298363,13.26646],[52.298337,13.266484],[52.298314,13.266518],
+        [52.298261,13.266518],[52.298421,13.26644],[52.298451,13.266445],[52.29848,13.26646],
+        [52.298506,13.266485],[52.298528,13.266518],[52.298545,13.266557],[52.298557,13.266602],
+        [52.298564,13.266653],[52.298619,13.266785],[52.298765,13.266808],[52.29916,13.266904],
+        [52.299555,13.267],[52.299597,13.266908],[52.2997,13.266501],[52.299807,13.266077],
+        [52.299914,13.265653],[52.299961,13.265564],[52.300025,13.265496],[52.300051,13.265431],
+        [52.300215,13.264881],[52.300393,13.264243],[52.300482,13.264308],[52.300687,13.264449],
+        [52.301085,13.264652],[52.301276,13.264707],[52.301632,13.264785],[52.301642,13.264477],
+        [52.301664,13.263877],[52.301667,13.263751],[52.301979,13.263749],[52.302179,13.263727],
+        [52.30214,13.263006],[52.302384,13.262843],[52.302563,13.263344],[52.302741,13.263845],
+        [52.302919,13.264346],[52.303082,13.264833],[52.303245,13.265321],[52.303408,13.265808],
+        [52.303671,13.266171],[52.303791,13.266262],[52.30389,13.266243],[52.303994,13.266304],
+        [52.30429,13.266049],[52.304586,13.265794],[52.304629,13.265954],[52.304686,13.266003],
+        [52.30478,13.266071],[52.304833,13.266022],[52.30489,13.265968],[52.30488,13.265895],
+        [52.304885,13.265839],[52.304914,13.265733],[52.304941,13.265697],[52.305172,13.265489],
+        [52.305404,13.265281],[52.305686,13.265798],[52.305831,13.266266],[52.305977,13.266734],
+        [52.306184,13.267286],[52.306344,13.267711],[52.306599,13.26839],[52.306805,13.268948],
+        [52.306958,13.269386],[52.307099,13.269399],[52.307258,13.269377],[52.307578,13.269366],
+        [52.30771,13.269454],[52.308146,13.269588],[52.308657,13.26972],[52.308925,13.269801],
+        [52.309325,13.269887],[52.309657,13.269933],[52.310116,13.269916],[52.310457,13.269489],
+        [52.310799,13.269063],[52.31114,13.268636],[52.311425,13.268269],[52.311993,13.267536],
+        [52.312153,13.267123],[52.311875,13.267027],[52.311344,13.266748],[52.310888,13.266174],
+        [52.310802,13.265761],[52.31064,13.265113],[52.310693,13.26461],[52.310797,13.263603],
+        [52.310892,13.26271],[52.311324,13.262756],[52.311757,13.262803],[52.31203,13.26302],
+        [52.312308,13.263131],[52.312822,13.263267],[52.313482,13.263451],[52.313995,13.263587],
+        [52.314427,13.263736],[52.315003,13.263888],[52.315581,13.264074],[52.31564,13.264202],
+        [52.315699,13.264223],[52.31568,13.264489]
+    ];
+
+    L.polyline(trackPoints, {
+        color: '#c0392b',
+        weight: 3.5,
+        opacity: 0.85
+    }).addTo(map);
+
+    const stations = [
+        { lat: 52.298261, lon: 13.266518, nr: '01', title: 'Stadt- und Technikmuseum', id: 's1' },
+        { lat: 52.306344, lon: 13.267711, nr: '02', title: 'Beginn Autobahnbau 1936',  id: 's2' },
+        { lat: 52.31568,  lon: 13.264489, nr: '03', title: 'Daimler-Benz Genshagen',   id: 's3' }
+    ];
+
+    const markers = [];
+
+    stations.forEach((s, i) => {
+        const icon = L.divIcon({
+            className: '',
+            html: `<div style="background:#c0392b;color:#fff;font-family:'Source Sans 3',sans-serif;
+                font-weight:700;font-size:0.75rem;width:30px;height:30px;border-radius:50%;
+                display:flex;align-items:center;justify-content:center;
+                border:2px solid #fff;box-shadow:0 2px 8px rgba(0,0,0,0.3);">${s.nr}</div>`,
+            iconSize: [30, 30], iconAnchor: [15, 15], popupAnchor: [0, -18]
+        });
+
+        const marker = L.marker([s.lat, s.lon], { icon })
+            .addTo(map)
+            .bindPopup(`<span class="popup-nr">Station ${s.nr}</span><div class="popup-title">${s.title}</div>`)
+            .on('click', () => toggleStation(s.id, i));
+
+        markers.push(marker);
+    });
+
+    map.fitBounds(L.polyline(trackPoints).getBounds(), { padding: [32, 32] });
+
+    // Aufklappen
+    function toggleStation(id, markerIndex) {
+        const el = document.getElementById(id);
+        const isOpen = el.classList.contains('open');
+        document.querySelectorAll('.rallye-station').forEach(s => s.classList.remove('open'));
+        if (!isOpen) {
+            el.classList.add('open');
+            markers[markerIndex].openPopup();
+        }
+    }
+</script>
+</body>
+</html>
