@@ -109,7 +109,7 @@
         const dot = document.createElement('button');
         dot.className = 'dot' + (i === 0 ? ' active' : '');
         dot.setAttribute('aria-label', `Bild ${i + 1}`);
-        dot.addEventListener('click', () => goTo(i));
+        dot.addEventListener('click', (e) => { e.preventDefault(); goTo(i); });
         dotsContainer.appendChild(dot);
     });
 
@@ -134,8 +134,8 @@
         updateCaption();
     }
 
-    document.getElementById('prevBtn').addEventListener('click', () => { goTo(current - 1); resetAuto(); });
-    document.getElementById('nextBtn').addEventListener('click', () => { goTo(current + 1); resetAuto(); });
+    document.getElementById('prevBtn').addEventListener('click', (e) => { e.preventDefault(); goTo(current - 1); resetAuto(); });
+    document.getElementById('nextBtn').addEventListener('click', (e) => { e.preventDefault(); goTo(current + 1); resetAuto(); });
 
     function startAuto() { autoTimer = setInterval(() => goTo(current + 1), 4000); }
     function resetAuto() { clearInterval(autoTimer); startAuto(); }
