@@ -631,3 +631,8 @@ a {
 .lightbox-prev { left: 20px; }
 .lightbox-next { right: 20px; }
 
+.leaflet-top,
+.leaflet-bottom,
+.leaflet-pane {
+    z-index: 1 !important;
+}
