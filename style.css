@@ -11,6 +11,7 @@
     --smoke: #f4f1ec;
     --iron: #7f8c8d;
     --gold: #d4a843;
+    --fire: #222e2e;
 }
 
 body {
@@ -49,7 +50,7 @@ header h1 {
     font-family: 'Playfair Display', serif;
     font-size: 1.1rem;
     font-style: italic;
-    color: var(black);
+    color: var(--fire);
     margin: 1.4rem 0 0.4rem;
     padding-left: 0.75rem;
 }
