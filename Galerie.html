@@ -78,5 +78,66 @@
         burgerBtn.classList.toggle('open');
     });
 </script>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightboxClose">✕</button>
+    <button class="lightbox-prev" id="lightboxPrev">&#8592;</button>
+    <img class="lightbox-img" id="lightboxImg" src="" alt="">
+    <p class="lightbox-caption" id="lightboxCaption"></p>
+    <button class="lightbox-next" id="lightboxNext">&#8594;</button>
+</div>
+
+<script>
+    const burgerBtn = document.getElementById('burgerBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    burgerBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('open');
+        burgerBtn.classList.toggle('open');
+    });
+
+    // Lightbox
+    const items = Array.from(document.querySelectorAll('.galerie-item'));
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightboxImg');
+    const lightboxCaption = document.getElementById('lightboxCaption');
+    let currentIndex = 0;
+
+    function openLightbox(index) {
+        currentIndex = index;
+        const img = items[index].querySelector('img');
+        const caption = items[index].querySelector('.galerie-item-caption');
+        lightboxImg.src = img.src;
+        lightboxImg.alt = img.alt;
+        lightboxCaption.textContent = caption ? caption.textContent : '';
+        lightbox.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeLightbox() {
+        lightbox.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+
+    items.forEach((item, i) => {
+        item.style.cursor = 'pointer';
+        item.addEventListener('click', () => openLightbox(i));
+    });
+
+    document.getElementById('lightboxClose').addEventListener('click', closeLightbox);
+    document.getElementById('lightboxPrev').addEventListener('click', () => openLightbox((currentIndex - 1 + items.length) % items.length));
+    document.getElementById('lightboxNext').addEventListener('click', () => openLightbox((currentIndex + 1) % items.length));
+
+    lightbox.addEventListener('click', (e) => {
+        if (e.target === lightbox) closeLightbox();
+    });
+
+    document.addEventListener('keydown', (e) => {
+        if (!lightbox.classList.contains('active')) return;
+        if (e.key === 'Escape') closeLightbox();
+        if (e.key === 'ArrowLeft') openLightbox((currentIndex - 1 + items.length) % items.length);
+        if (e.key === 'ArrowRight') openLightbox((currentIndex + 1) % items.length);
+    });
+</script>
 </body>
 </html>
