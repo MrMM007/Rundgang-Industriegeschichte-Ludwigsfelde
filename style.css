@@ -45,6 +45,23 @@ header h1 {
     line-height: 1.2;
     color: #fff;
 }
+.page-content h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.1rem;
+    font-style: italic;
+    color: var(--iron);
+    margin: 1.4rem 0 0.4rem;
+    padding-left: 0.75rem;
+}
+
+.page-content .subtitle {
+    font-style: italic;
+    color: var(--iron);
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+    padding-left: 0.75rem;
+    line-height: 1.6;
+}
 
 header h1 a {
     color: #fff;
