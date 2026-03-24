@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Über uns – Industriegeschichte Ludwigsfelde</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .ueber-intro {
+            max-width: 680px;
+            margin: 0 auto 3rem;
+            text-align: center;
+            color: var(--iron, #2c3e50);
+            font-size: 1.05rem;
+            line-height: 1.8;
+        }
+
+        .schule-block {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            background: rgba(192,57,43,0.05);
+            border-left: 4px solid var(--rust, #c0392b);
+            border-radius: 0 8px 8px 0;
+            padding: 1.2rem 1.5rem;
+            margin: 0 auto 3rem;
+            max-width: 560px;
+        }
+
+        .schule-logo {
+            width: 72px;
+            height: 72px;
+            object-fit: contain;
+            flex-shrink: 0;
+            border-radius: 6px;
+        }
+
+        .schule-logo-placeholder {
+            width: 72px;
+            height: 72px;
+            background: rgba(192,57,43,0.10);
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.6rem;
+            color: var(--rust, #c0392b);
+            text-align: center;
+            font-weight: 600;
+            flex-shrink: 0;
+            line-height: 1.4;
+            padding: 0.4rem;
+        }
+
+        .schule-info p {
+            margin: 0.15rem 0;
+            font-size: 0.92rem;
+            color: var(--iron, #2c3e50);
+        }
+
+        .schule-info strong {
+            font-family: 'Playfair Display', serif;
+            font-size: 1rem;
+        }
+
+        .section-label {
+            text-align: center;
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            color: var(--iron, #2c3e50);
+            margin-bottom: 0.4rem;
+        }
+
+        .section-divider {
+            width: 48px;
+            height: 3px;
+            background: var(--rust, #c0392b);
+            margin: 0 auto 2.2rem;
+            border-radius: 2px;
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 3rem;
+        }
+
+        .team-card {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 18px rgba(44,62,80,0.10);
+            overflow: hidden;
+            transition: transform 0.25s, box-shadow 0.25s;
+            text-align: center;
+        }
+
+        .team-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 28px rgba(44,62,80,0.16);
+        }
+
+        .team-card-img {
+            width: 100%;
+            aspect-ratio: 1 / 1;
+            object-fit: cover;
+            display: block;
+        }
+
+        .team-card-placeholder {
+            width: 100%;
+            aspect-ratio: 1 / 1;
+            background: linear-gradient(135deg, #f0ebe6 0%, #ddd5cc 100%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+        }
+
+        .team-card-placeholder svg {
+            width: 52px;
+            height: 52px;
+            opacity: 0.3;
+        }
+
+        .team-card-placeholder span {
+            font-size: 0.7rem;
+            color: #999;
+            font-style: italic;
+        }
+
+        .team-card-body {
+            padding: 0.9rem 0.75rem 1.1rem;
+        }
+
+        .team-card-name {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.05rem;
+            font-weight: 700;
+            color: var(--iron, #2c3e50);
+            margin-bottom: 0.25rem;
+        }
+
+        .team-card-role {
+            font-size: 0.75rem;
+            color: var(--rust, #c0392b);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .vertreten-block {
+            text-align: center;
+            padding: 1.5rem 1rem;
+            border-top: 1px solid rgba(44,62,80,0.08);
+            margin-bottom: 2.5rem;
+        }
+
+        .vertreten-block h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1rem;
+            color: var(--iron, #2c3e50);
+            margin-bottom: 0.4rem;
+        }
+
+        .vertreten-block p {
+            font-size: 0.85rem;
+            color: #888;
+            max-width: 500px;
+            margin: 0.4rem auto 0;
+            line-height: 1.7;
+        }
+
+        .partner-block {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .partner-label {
+            font-size: 0.75rem;
+            color: #aaa;
+            margin-bottom: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            font-weight: 600;
+        }
+
+        .partner-block a img {
+            max-height: 64px;
+            opacity: 0.75;
+            transition: opacity 0.2s;
+        }
+
+        .partner-block a:hover img { opacity: 1; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1><a href="index.html">Industriegeschichte Ludwigsfelde</a></h1>
+    <div class="header-right">
+        <a class="home-icon" href="index.html" title="Startseite">
+            <img src="bilder/icons8-zuhause-32.png" alt="Startseite">
+        </a>
+        <button class="burger" id="burgerBtn">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</header>
+
+<nav id="mobileMenu">
+    <ul>
+        <li><a href="index.html">Startseite</a></li>
+        <li><a href="Geschichte.html">Geschichte</a></li>
+        <li><a href="Rallye.html">Rallye</a></li>
+        <li><a href="Galerie.html">Galerie</a></li>
+        <li><a href="Überuns.html">Über uns</a></li>
+        <li><a href="Kontakt.html">Kontakt</a></li>
+    </ul>
+</nav>
+
+<main>
+    <div class="page-hero">
+        <h2 class="page-hero-title">Über uns</h2>
+        <p class="page-hero-subtitle">Das Team hinter dem Projekt</p>
+    </div>
+
+    <div class="page-content">
+
+        <p class="ueber-intro">
+            Dieses Projekt entstand im Rahmen des Abiturjahrgangs 2026 am Marie-Curie-Gymnasium Ludwigsfelde. Unser Ziel ist es, die industrielle Geschichte unserer Stadt digital erlebbar zu machen.
+        </p>
+
+        <!-- Schule ------------------------------------------------->
+        <div class="schule-block">
+            <!--
+                Schullogo einbinden: ersetze das Platzhalter-Div durch:
+                <img src="bilder/schullogo.png" alt="MCG Schullogo" class="schule-logo">
+            -->
+            <div class="schule-logo-placeholder">Schullogo<br>hier</div>
+            <div class="schule-info">
+                <p><strong>Marie-Curie-Gymnasium</strong></p>
+                <p>Abiturjahrgang 2026</p>
+                <p>Ernst-Thälmann-Straße 17</p>
+                <p>14974 Ludwigsfelde</p>
+            </div>
+        </div>
+
+        <!-- Team -------------------------------------------------->
+        <h2 class="section-label">Website-Gestaltung</h2>
+        <div class="section-divider"></div>
+
+        <div class="team-grid">
+
+            <div class="team-card">
+                <!--
+                    Foto einbinden: ersetze das Platzhalter-Div durch:
+                    <img src="bilder/malte.jpg" alt="Malte Martin" class="team-card-img">
+                -->
+                <div class="team-card-placeholder">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="#bbb" stroke-width="1.5">
+                        <circle cx="12" cy="8" r="4"/>
+                        <path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/>
+                    </svg>
+                    <span>Foto folgt</span>
+                </div>
+                <div class="team-card-body">
+                    <div class="team-card-name">Malte Martin</div>
+                    <div class="team-card-role">Website-Gestaltung</div>
+                </div>
+            </div>
+
+            <div class="team-card">
+                <!-- <img src="bilder/birk.jpg" alt="Birk Weider" class="team-card-img"> -->
+                <div class="team-card-placeholder">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="#bbb" stroke-width="1.5">
+                        <circle cx="12" cy="8" r="4"/>
+                        <path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/>
+                    </svg>
+                    <span>Foto folgt</span>
+                </div>
+                <div class="team-card-body">
+                    <div class="team-card-name">Birk Weider</div>
+                    <div class="team-card-role">Website-Gestaltung</div>
+                </div>
+            </div>
+
+            <div class="team-card">
+                <!-- <img src="bilder/sophie.jpg" alt="Sophie Koch" class="team-card-img"> -->
+                <div class="team-card-placeholder">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="#bbb" stroke-width="1.5">
+                        <circle cx="12" cy="8" r="4"/>
+                        <path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/>
+                    </svg>
+                    <span>Foto folgt</span>
+                </div>
+                <div class="team-card-body">
+                    <div class="team-card-name">Sophie Koch</div>
+                    <div class="team-card-role">Website-Gestaltung</div>
+                </div>
+            </div>
+
+            <div class="team-card">
+                <!-- <img src="bilder/jonathan.jpg" alt="Jonathan Schiemann" class="team-card-img"> -->
+                <div class="team-card-placeholder">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="#bbb" stroke-width="1.5">
+                        <circle cx="12" cy="8" r="4"/>
+                        <path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/>
+                    </svg>
+                    <span>Foto folgt</span>
+                </div>
+                <div class="team-card-body">
+                    <div class="team-card-name">Jonathan Schiemann</div>
+                    <div class="team-card-role">Website-Gestaltung</div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Vertreten durch --------------------------------------->
+        <div class="vertreten-block">
+            <h3>Vertreten durch</h3>
+            <p>Felix Matthies</p>
+            <p>Wir nehmen nicht an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teil und sind dazu auch nicht verpflichtet.</p>
+        </div>
+
+        <!-- Partner --------------------------------------------->
+        <div class="partner-block">
+            <p class="partner-label">In Zusammenarbeit mit</p>
+            <a href="https://www.ludwigsfelder-geschichtsverein.de/" target="_blank">
+                <img src="bilder/Geschichtsverein LOGO.avif" alt="Ludwigsfelder Geschichtsverein">
+            </a>
+        </div>
+
+    </div>
+</main>
+
+<footer>
+    <div>
+        <a href="Kontakt.html">Impressum</a> &nbsp;|&nbsp; © 2026 Industriegeschichte Ludwigsfelde
+    </div>
+</footer>
+
+<script>
+    document.getElementById('burgerBtn').addEventListener('click', () => {
+        document.getElementById('mobileMenu').classList.toggle('open');
+        document.getElementById('burgerBtn').classList.toggle('open');
+    });
+</script>
+</body>
+</html>
