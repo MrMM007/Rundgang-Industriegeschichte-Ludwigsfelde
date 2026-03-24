@@ -7,6 +7,173 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* ── ACCORDION ── */
+        .accordion-item {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 16px rgba(44,62,80,0.08);
+            margin-bottom: 1.25rem;
+            overflow: hidden;
+            transition: box-shadow 0.2s;
+        }
+
+        .accordion-item:hover {
+            box-shadow: 0 8px 24px rgba(44,62,80,0.14);
+        }
+
+        .accordion-header {
+            display: flex;
+            align-items: center;
+            gap: 1.25rem;
+            padding: 1.4rem 1.5rem;
+            cursor: pointer;
+            user-select: none;
+            border-left: 4px solid var(--rust);
+        }
+
+        .accordion-epoch {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: var(--rust);
+            min-width: 3rem;
+            line-height: 1;
+            flex-shrink: 0;
+        }
+
+        .accordion-titles {
+            flex: 1;
+        }
+
+        .accordion-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.1rem;
+            color: var(--steel);
+            line-height: 1.3;
+        }
+
+        .accordion-subtitle {
+            font-size: 0.82rem;
+            color: var(--iron);
+            margin-top: 0.2rem;
+            font-style: italic;
+        }
+
+        .accordion-toggle {
+            font-size: 1.2rem;
+            color: var(--rust);
+            transition: transform 0.3s;
+            flex-shrink: 0;
+        }
+
+        .accordion-item.open .accordion-toggle {
+            transform: rotate(45deg);
+        }
+
+        .accordion-body {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.45s ease, opacity 0.3s ease;
+            opacity: 0;
+        }
+
+        .accordion-item.open .accordion-body {
+            max-height: 2000px;
+            opacity: 1;
+        }
+
+        .accordion-body-inner {
+            padding: 0 1.5rem 1.5rem 1.5rem;
+            border-top: 1px solid rgba(44,62,80,0.08);
+        }
+
+        .accordion-body-inner p {
+            font-size: 0.95rem;
+            color: var(--steel);
+            line-height: 1.8;
+            margin: 1rem 0 0.75rem;
+        }
+
+        .accordion-body-inner h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1rem;
+            font-style: italic;
+            color: var(--fire);
+            margin: 1.4rem 0 0.5rem;
+            padding-left: 0.75rem;
+            border-left: 2px solid var(--gold);
+        }
+
+        .accordion-body-inner ul {
+            list-style: none;
+            padding-left: 0.5rem;
+        }
+
+        .accordion-body-inner ul li {
+            font-size: 0.88rem;
+            color: var(--iron);
+            line-height: 1.7;
+            padding: 0.15rem 0;
+            padding-left: 1rem;
+            position: relative;
+        }
+
+        .accordion-body-inner ul li::before {
+            content: '–';
+            position: absolute;
+            left: 0;
+            color: var(--rust);
+            font-weight: 700;
+        }
+
+        /* Intro-Block */
+        .intro-block {
+            background: white;
+            border-radius: 8px;
+            padding: 1.5rem;
+            border-top: 4px solid var(--rust);
+            box-shadow: 0 4px 16px rgba(44,62,80,0.08);
+            margin-bottom: 2rem;
+            font-size: 0.95rem;
+            line-height: 1.8;
+            color: var(--iron);
+        }
+
+        /* Produkte-Grid */
+        .produkte-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-top: 0.5rem;
+        }
+
+        .produkt-card {
+            background: var(--smoke);
+            border-radius: 6px;
+            padding: 1rem;
+            border-top: 3px solid var(--rust);
+        }
+
+        .produkt-card h4 {
+            font-family: 'Playfair Display', serif;
+            font-size: 0.95rem;
+            color: var(--steel);
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+
+        .produkt-card ul {
+            padding-left: 0;
+        }
+
+        .produkt-card ul li {
+            font-size: 0.82rem;
+        }
+    </style>
 </head>
 <body>
 
@@ -40,123 +207,210 @@
     </div>
 
     <div class="page-content">
-        <h2>Einleitung</h2>
-        <p>Die Ausstellung präsentiert eine einzigartige Sammlung von Objekten aus den Jahren 1843 bis heute (2026) und beleuchtet die industrielle Entwicklung der Stadt Ludwigsfelde über nahezu zwei Jahrhunderte.
-            Im Mittelpunkt stehen Produkte, die auf dem Land, in der Luft und auf dem Wasser ihren Einsatz fanden – von frühen Motorrollern und Nutzfahrzeugen über Schiffsdieselmotoren bis hin zu Flugzeugtriebwerken.</p>
-        
-        <h2>1843 bis 1935 - Die Anfänge</h2>
-        <p>Ludwigsfelde war vor dem Industriezeitalter eine kleine Landgemeinde südlich von Berlin. Die Infrastruktur der Region
-        legte jedoch den Grundstein für spätere industrielle Entwicklungen.</p>
-        <h3>Wichtige Entwicklungen</h3>
-        <ul>
-            <li>• Frühe Metallbearbeitung und handwerkliche Baubetriebe in der Region</li>
-            <li>• Ausbau der Eisenbahnverbindungen – Grundlage für Industrieansiedlung</li>
-            <li>• Wachsende Verkehrsinfrastruktur durch die Nähe zur Reichshauptstadt Berlin</li>
-            <li>• Erste gewerbliche und handwerkliche Strukturen in Ludwigsfelde</li>
-        </ul>
-        <h2>1936-1945 - Daimler-Benz und Kriegswirtschaft</h2>
-        <p>Das Jahr 1936 markiert den Beginn der Großindustrie in Ludwigsfelde. Auf Auftrag des
-            Reichsluftfahrtministeriums entstand in Genshagen ein modernes Flugmotorenwerk.</p>
-        <h3>Chronologie:</h3>
-        <ul>
-            <li>• 1935: Auftrag des Reichsluftfahrtministeriums zum Bau eines Großserien-Flugmotorenwerks</li>
-            <li>• 24.01.1936: Gründung der Daimler-Benz Motoren GmbH Genshagen</li>
-            <li>• 1936: Baubeginn – erste Hallen bereits im Herbst fertiggestellt</li>
-            <li>• 1936: 180 Beschäftigte → 1937: bereits 5.600 Beschäftigte</li>
-            <li>• Februar 1937: Erster Flugmotor fertiggestellt</li>
-            <li>• 1937: 10 Produktionshallen, ca. 88.000 m² Werkstattfläche</li>
-            <li>• Bis Ende 1937: 615 Motoren DB 600 und 150 Motoren DB 601 produziert</li>
-        </ul>
-        <h3>Infrastruktur und Versorgung:</h3>
-        <ul>
-            <li>• Aufbau energetischer Anlagen (Hilfsprozess "Energetik", 1936–1941)</li>
-            <li>• Medienversorgung: Heizung, Trinkwasser, Stadtgas, Druckluft, Abwasser, Elektroenergie</li>
-            <li>• Entwicklung von Eisenbahn- und Autobahnanbindungen</li>
-        </ul>
-        <h3>Ende des Werks:</h3>
-        <ul>
-            <li>• Zerstörung von Teilen der Energiesysteme im Zweiten Weltkrieg</li>
-            <li>• Überlebende Energieanlagen wurden von Nachfolgebetrieben weitergenutzt</li>
-            <li>•1945: Einrichtung einer kommunalen Autoreparaturwerkstatt
-                (Instandsetzung für Gemeindefahrzeuge und Fahrzeuge der Roten Armee)</li>
-        </ul>
-        <h2>1945-1952 Nachkriegszeit und Neuanfang</h2>
-        <p>Nach dem Zweiten Weltkrieg lag das Werk in Trümmern. Die Demontage durch die Sowjetunion und
-        der anschließende Wiederaufbau prägten diese Übergangsphase.</p>
-        <ul>
-            <li>• Ende der Demontage (1948): Sprengung der verbliebenen Daimler-Benz-Fertigungshallen</li>
-            <li>• Kein bedeutender Arbeitgeber mehr in Ludwigsfelde/Genshagen → Pendeln nach Berlin</li>
-            <li>• Kommunalpolitiker fordern dringend neue Industrieansiedlung</li>
-            <li>• Aufbau der DDR-Streitkräfte schafft neuen Bedarf – insbesondere an Torpedoschnellbooten</li>
-            <li>• Entscheidung zur Eigenproduktion: Kopierung des Mercedes-Benz 518 Schiffsdiesels</li>
-            <li>• 1951: Regierungsbeschluss zum Bau eines neuen Werks (Kapazität: 100–150 Motoren/Jahr)</li>
-            <li>• Projekt M77 (1951): Planung der Großmotorenfertigung, Standort Ludwigsfelde ausgewählt</li>
-            <li>• Gründung des VEB Kraftmaschinenbau Ludwigsfelde; Kontoeröffnung mit 10.000 DM</li>
-        </ul>
-        
-        <h2>1963-1990 - NKW-Produktion und LKW-Ära</h2>
-        <p>Mit dem Bau des W50 begann eine neue Epoche: Ludwigsfelde wurde zur Lastwagenstadt der DDR.</p>
-        <ul>
-            <li>• 1963–1965: Aufbau der LKW-Produktion W50 (NKW – Nutzkraftwagen)</li>
-            <li>• W50: Meistgebauter LKW der DDR – in zahlreichen Varianten gefertigt</li>
-            <li>• L60: Weiterentwicklung und Nachfolger des W50</li>
-            <li>• Technologische Entwicklungen: CNC-Technik, neue Schweißtechnologien </li>
-            <li>• Werksumbauten 1963–1990 für steigende Produktionskapazitäten </li>
-            <li>• Viele Beschäftigte aus der gesamten Region arbeiteten im Werk </li>
-            <li>• Viele Beschäftigte aus der gesamten Region arbeiteten im Werk</li>
-            <li>• Motorsport: Motorboot-, Motorroller- und Motorsportclub in Ludwigsfelde </li>
-        </ul>
 
-        <h2>1991-2026 - Neustart nach der Wende</h2>
-        <p>Die Wende brachte tiefgreifende Veränderungen. Internationale Konzerne übernahmen Teile des Werks und sicherten Arbeitsplätze in der Region</p>
-        <h3>Mercedes-Benz Ludwigsfelde:</h3>
-        <ul>
-            <li>• 1991: Übernahme durch Mercedes-Benz</li>
-            <li>• Umfangreiche Werksanierung und Modernisierung</li>
-            <li>• Produktion des Mercedes-Benz Sprinter – bis heute</li>
-            <li>• Produktion des Vario (leichter Transporter)</li>
-            <li>• Ludwigsfelde als fester Teil der Mercedes-Nutzfahrzeugfertigung in Europa</li>   
-        </ul>
-        <h3>MTU Maintenance Berlin-Brandenburg:</h3>
-        <ul>
-            <li>• MTU Maintenance Berlin-Brandenburg GmbH: Triebwerkswartung und -überholung</li>
-            <li>• Anknüpfung an die Tradition der Triebwerksfertigung seit den 1950er Jahren</li>
-            <li>• Internationaler Wartungsbetrieb für zivile und militärische Triebwerke</li>
-           
-        </ul>
-        <h3>Weitere Betriebe:</h3>
-        <ul>
-            <li>• Umformtechnik GmbH: Werkzeugbau und Produktionsmittel</li>
-            <li>• Metall- und Baubetriebe als Nachfolger historischer Gewerbe</li>
-            <li>• Lehrausbildung: Tradition der Berufsausbildung im Werk fortgeführt</li>
-            <li>• Ludwigsfelde als anerkannte Automobilstadt in Brandenburg</li>
-            <li></li>
-        </ul>
+        <div class="intro-block">
+            Die Ausstellung präsentiert eine einzigartige Sammlung von Objekten aus den Jahren 1843 bis heute (2026) und beleuchtet die industrielle Entwicklung der Stadt Ludwigsfelde über nahezu zwei Jahrhunderte.
+            Im Mittelpunkt stehen Produkte, die auf dem Land, in der Luft und auf dem Wasser ihren Einsatz fanden – von frühen Motorrollern und Nutzfahrzeugen über Schiffsdieselmotoren bis hin zu Flugzeugtriebwerken.
+        </div>
 
-        <h2>Produktübersicht nach Bereichen</h2>
-        <h3>Auf dem Land</h3>
-        <ul>
-            <li>• Motorroller: Pitty, Wiesel, Berlin, Troll 1 (1953–1964)</li>
-            <li>• Dieselkarren / Dieselameise DK 2002L (1954–1956)</li>
-            <li>• Spezial-PKW P3</li>
-            <li>• LKW W50 und L60 (1965–1990)</li>
-            <li>• LKW W50 und L60 (1965–1990)</li>
-            <li>• Mercedes-Benz Sprinter und Vario (1991–heute)</li>
-            <li>• Fahrradhilfsmotoren, Kleinmotoren, Rennmotoren</li>
-        </ul>
-         <h3>In der Luft</h3>
-        <ul>
-            <li>• Flugmotoren DB 600 und DB 601 – Daimler-Benz Genshagen (1937–1945)</li>
-            <li>• Arbeiten am Passagierjet "152" der DDR</li>
-            <li>• Triebwerksreparatur und -wartung – IWL und MTU Maintenance (1952–heute)</li>
-        </ul>
-        <h3>Auf dem Wasser</h3>
-        <ul>
-            <li>• Hochleistungs-Schiffsdieselmotor 20 KVD 25 (1953–1957)</li>
-            <li>• Nachbau Daimler-Benz Motor MB 511 (2.500 PS) für Torpedoschnellboote</li>
-            <li>• Triebwerksreparatur und -wartung – IWL und MTU Maintenance (1952–heute)</li>
-            <li>• Einsatz in DDR-Seestreitkräften und sowjetischer Kriegsmarine</li>
-        </ul>
+        <!-- Epoche 1 -->
+        <div class="accordion-item" id="e1" onclick="toggleAccordion('e1')">
+            <div class="accordion-header">
+                <div class="accordion-epoch">I</div>
+                <div class="accordion-titles">
+                    <div class="accordion-title">Die Anfänge</div>
+                    <div class="accordion-subtitle">1843 – 1935</div>
+                </div>
+                <span class="accordion-toggle">+</span>
+            </div>
+            <div class="accordion-body">
+                <div class="accordion-body-inner">
+                    <p>Ludwigsfelde war vor dem Industriezeitalter eine kleine Landgemeinde südlich von Berlin. Die Infrastruktur der Region legte jedoch den Grundstein für spätere industrielle Entwicklungen.</p>
+                    <h3>Wichtige Entwicklungen</h3>
+                    <ul>
+                        <li>Frühe Metallbearbeitung und handwerkliche Baubetriebe in der Region</li>
+                        <li>Ausbau der Eisenbahnverbindungen – Grundlage für Industrieansiedlung</li>
+                        <li>Wachsende Verkehrsinfrastruktur durch die Nähe zur Reichshauptstadt Berlin</li>
+                        <li>Erste gewerbliche und handwerkliche Strukturen in Ludwigsfelde</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Epoche 2 -->
+        <div class="accordion-item" id="e2" onclick="toggleAccordion('e2')">
+            <div class="accordion-header">
+                <div class="accordion-epoch">II</div>
+                <div class="accordion-titles">
+                    <div class="accordion-title">Daimler-Benz und Kriegswirtschaft</div>
+                    <div class="accordion-subtitle">1936 – 1945</div>
+                </div>
+                <span class="accordion-toggle">+</span>
+            </div>
+            <div class="accordion-body">
+                <div class="accordion-body-inner">
+                    <p>Das Jahr 1936 markiert den Beginn der Großindustrie in Ludwigsfelde. Auf Auftrag des Reichsluftfahrtministeriums entstand in Genshagen ein modernes Flugmotorenwerk.</p>
+                    <h3>Chronologie</h3>
+                    <ul>
+                        <li>1935: Auftrag des Reichsluftfahrtministeriums zum Bau eines Großserien-Flugmotorenwerks</li>
+                        <li>24.01.1936: Gründung der Daimler-Benz Motoren GmbH Genshagen</li>
+                        <li>1936: Baubeginn – erste Hallen bereits im Herbst fertiggestellt</li>
+                        <li>1936: 180 Beschäftigte → 1937: bereits 5.600 Beschäftigte</li>
+                        <li>Februar 1937: Erster Flugmotor fertiggestellt</li>
+                        <li>1937: 10 Produktionshallen, ca. 88.000 m² Werkstattfläche</li>
+                        <li>Bis Ende 1937: 615 Motoren DB 600 und 150 Motoren DB 601 produziert</li>
+                    </ul>
+                    <h3>Infrastruktur und Versorgung</h3>
+                    <ul>
+                        <li>Aufbau energetischer Anlagen (Hilfsprozess „Energetik", 1936–1941)</li>
+                        <li>Medienversorgung: Heizung, Trinkwasser, Stadtgas, Druckluft, Abwasser, Elektroenergie</li>
+                        <li>Entwicklung von Eisenbahn- und Autobahnanbindungen</li>
+                    </ul>
+                    <h3>Ende des Werks</h3>
+                    <ul>
+                        <li>Zerstörung von Teilen der Energiesysteme im Zweiten Weltkrieg</li>
+                        <li>Überlebende Energieanlagen wurden von Nachfolgebetrieben weitergenutzt</li>
+                        <li>1945: Einrichtung einer kommunalen Autoreparaturwerkstatt (Instandsetzung für Gemeindefahrzeuge und Fahrzeuge der Roten Armee)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Epoche 3 -->
+        <div class="accordion-item" id="e3" onclick="toggleAccordion('e3')">
+            <div class="accordion-header">
+                <div class="accordion-epoch">III</div>
+                <div class="accordion-titles">
+                    <div class="accordion-title">Nachkriegszeit und Neuanfang</div>
+                    <div class="accordion-subtitle">1945 – 1952</div>
+                </div>
+                <span class="accordion-toggle">+</span>
+            </div>
+            <div class="accordion-body">
+                <div class="accordion-body-inner">
+                    <p>Nach dem Zweiten Weltkrieg lag das Werk in Trümmern. Die Demontage durch die Sowjetunion und der anschließende Wiederaufbau prägten diese Übergangsphase.</p>
+                    <ul>
+                        <li>Ende der Demontage (1948): Sprengung der verbliebenen Daimler-Benz-Fertigungshallen</li>
+                        <li>Kein bedeutender Arbeitgeber mehr in Ludwigsfelde/Genshagen → Pendeln nach Berlin</li>
+                        <li>Kommunalpolitiker fordern dringend neue Industrieansiedlung</li>
+                        <li>Aufbau der DDR-Streitkräfte schafft neuen Bedarf – insbesondere an Torpedoschnellbooten</li>
+                        <li>Entscheidung zur Eigenproduktion: Kopierung des Mercedes-Benz 518 Schiffsdiesels</li>
+                        <li>1951: Regierungsbeschluss zum Bau eines neuen Werks (Kapazität: 100–150 Motoren/Jahr)</li>
+                        <li>Projekt M77 (1951): Planung der Großmotorenfertigung, Standort Ludwigsfelde ausgewählt</li>
+                        <li>Gründung des VEB Kraftmaschinenbau Ludwigsfelde; Kontoeröffnung mit 10.000 DM</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Epoche 4 -->
+        <div class="accordion-item" id="e4" onclick="toggleAccordion('e4')">
+            <div class="accordion-header">
+                <div class="accordion-epoch">IV</div>
+                <div class="accordion-titles">
+                    <div class="accordion-title">NKW-Produktion und LKW-Ära</div>
+                    <div class="accordion-subtitle">1963 – 1990</div>
+                </div>
+                <span class="accordion-toggle">+</span>
+            </div>
+            <div class="accordion-body">
+                <div class="accordion-body-inner">
+                    <p>Mit dem Bau des W50 begann eine neue Epoche: Ludwigsfelde wurde zur Lastwagenstadt der DDR.</p>
+                    <ul>
+                        <li>1963–1965: Aufbau der LKW-Produktion W50 (NKW – Nutzkraftwagen)</li>
+                        <li>W50: Meistgebauter LKW der DDR – in zahlreichen Varianten gefertigt</li>
+                        <li>L60: Weiterentwicklung und Nachfolger des W50</li>
+                        <li>Technologische Entwicklungen: CNC-Technik, neue Schweißtechnologien</li>
+                        <li>Werksumbauten 1963–1990 für steigende Produktionskapazitäten</li>
+                        <li>Viele Beschäftigte aus der gesamten Region arbeiteten im Werk</li>
+                        <li>Motorsport: Motorboot-, Motorroller- und Motorsportclub in Ludwigsfelde</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Epoche 5 -->
+        <div class="accordion-item" id="e5" onclick="toggleAccordion('e5')">
+            <div class="accordion-header">
+                <div class="accordion-epoch">V</div>
+                <div class="accordion-titles">
+                    <div class="accordion-title">Neustart nach der Wende</div>
+                    <div class="accordion-subtitle">1991 – 2026</div>
+                </div>
+                <span class="accordion-toggle">+</span>
+            </div>
+            <div class="accordion-body">
+                <div class="accordion-body-inner">
+                    <p>Die Wende brachte tiefgreifende Veränderungen. Internationale Konzerne übernahmen Teile des Werks und sicherten Arbeitsplätze in der Region.</p>
+                    <h3>Mercedes-Benz Ludwigsfelde</h3>
+                    <ul>
+                        <li>1991: Übernahme durch Mercedes-Benz</li>
+                        <li>Umfangreiche Werksanierung und Modernisierung</li>
+                        <li>Produktion des Mercedes-Benz Sprinter – bis heute</li>
+                        <li>Produktion des Vario (leichter Transporter)</li>
+                        <li>Ludwigsfelde als fester Teil der Mercedes-Nutzfahrzeugfertigung in Europa</li>
+                    </ul>
+                    <h3>MTU Maintenance Berlin-Brandenburg</h3>
+                    <ul>
+                        <li>MTU Maintenance Berlin-Brandenburg GmbH: Triebwerkswartung und -überholung</li>
+                        <li>Anknüpfung an die Tradition der Triebwerksfertigung seit den 1950er Jahren</li>
+                        <li>Internationaler Wartungsbetrieb für zivile und militärische Triebwerke</li>
+                    </ul>
+                    <h3>Weitere Betriebe</h3>
+                    <ul>
+                        <li>Umformtechnik GmbH: Werkzeugbau und Produktionsmittel</li>
+                        <li>Metall- und Baubetriebe als Nachfolger historischer Gewerbe</li>
+                        <li>Lehrausbildung: Tradition der Berufsausbildung im Werk fortgeführt</li>
+                        <li>Ludwigsfelde als anerkannte Automobilstadt in Brandenburg</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Epoche 6 – Produktübersicht -->
+        <div class="accordion-item" id="e6" onclick="toggleAccordion('e6')">
+            <div class="accordion-header">
+                <div class="accordion-epoch" style="font-size:1.3rem;">⚙</div>
+                <div class="accordion-titles">
+                    <div class="accordion-title">Produktübersicht nach Bereichen</div>
+                    <div class="accordion-subtitle">Land · Luft · Wasser</div>
+                </div>
+                <span class="accordion-toggle">+</span>
+            </div>
+            <div class="accordion-body">
+                <div class="accordion-body-inner">
+                    <div class="produkte-grid">
+                        <div class="produkt-card">
+                            <h4>🚛 Auf dem Land</h4>
+                            <ul>
+                                <li>Motorroller: Pitty, Wiesel, Berlin, Troll 1 (1953–1964)</li>
+                                <li>Dieselkarren / Dieselameise DK 2002L (1954–1956)</li>
+                                <li>Spezial-PKW P3</li>
+                                <li>LKW W50 und L60 (1965–1990)</li>
+                                <li>Mercedes-Benz Sprinter und Vario (1991–heute)</li>
+                                <li>Fahrradhilfsmotoren, Kleinmotoren, Rennmotoren</li>
+                            </ul>
+                        </div>
+                        <div class="produkt-card">
+                            <h4>✈ In der Luft</h4>
+                            <ul>
+                                <li>Flugmotoren DB 600 und DB 601 – Daimler-Benz Genshagen (1937–1945)</li>
+                                <li>Arbeiten am Passagierjet „152" der DDR</li>
+                                <li>Triebwerksreparatur und -wartung – IWL und MTU Maintenance (1952–heute)</li>
+                            </ul>
+                        </div>
+                        <div class="produkt-card">
+                            <h4>⚓ Auf dem Wasser</h4>
+                            <ul>
+                                <li>Hochleistungs-Schiffsdieselmotor 20 KVD 25 (1953–1957)</li>
+                                <li>Nachbau Daimler-Benz Motor MB 511 (2.500 PS) für Torpedoschnellboote</li>
+                                <li>Einsatz in DDR-Seestreitkräften und sowjetischer Kriegsmarine</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </div>
 </main>
@@ -168,12 +422,17 @@
 </footer>
 
 <script>
-    const burgerBtn = document.getElementById('burgerBtn');
-    const mobileMenu = document.getElementById('mobileMenu');
-    burgerBtn.addEventListener('click', () => {
-        mobileMenu.classList.toggle('open');
-        burgerBtn.classList.toggle('open');
+    document.getElementById('burgerBtn').addEventListener('click', () => {
+        document.getElementById('mobileMenu').classList.toggle('open');
+        document.getElementById('burgerBtn').classList.toggle('open');
     });
+
+    function toggleAccordion(id) {
+        const el = document.getElementById(id);
+        const isOpen = el.classList.contains('open');
+        document.querySelectorAll('.accordion-item').forEach(e => e.classList.remove('open'));
+        if (!isOpen) el.classList.add('open');
+    }
 </script>
 </body>
 </html>
